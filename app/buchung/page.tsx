@@ -17,7 +17,7 @@ export default function Buchung() {
       </div> */}
       <div className="w-full h-[2000px] overflow-hidden">
   <iframe
-    src="https://beds24.com/booking2.php?propid=319626&hidefooter=yes&advancedays=2&referer=iframe&showsearch=0"
+    src="https://beds24.com/booking2.php?propid=319626&mobile=1&hidefooter=yes&advancedays=2&referer=iframe&showsearch=0"
     className="w-full h-full"
     style={{ border: "none" }}
   ></iframe>
