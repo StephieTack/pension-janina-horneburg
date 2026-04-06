@@ -16,10 +16,17 @@ export default function RootLayout({
       <body className={plusJakarta.className}>
         <header className="header">
           <nav className="nav">
-            <a href="/">Start</a>
-            <a href="/zimmer">Zimmer</a>
-            <a href="/kontakt">Kontakt</a>
-            <a href="/buchung">Buchung</a>
+            <a href="/" className="logo">
+              <img src="/logo_hell_klein.png" alt="Pension Janina" />
+            </a>
+
+            <div className="navLinks">
+              <a href="/zimmer">Zimmer</a>
+              <a href="/kontakt">Kontakt</a>
+              <a href="/buchung" className="navButton">
+                Buchung
+              </a>
+            </div>
           </nav>
         </header>
 
