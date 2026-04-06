@@ -1,31 +1,9 @@
 import styles from "./page.module.css";
 
-export default function Home() {
+export default function Zimmer() {
   return (
     <main>
-      <section className={styles.hero}>
-  <div className={styles.heroContent}>
-    <img
-      src="/logo.png"
-      alt="Pension Janina Horneburg"
-      className={styles.heroLogo}
-    />
-
-    <p className={styles.heroSubtitle}>
-      Ankommen. Durchatmen. Wohlfühlen.
-    </p>
-
-    <a href="/buchung" className={styles.ctaButton}>
-      Zur Buchung
-    </a>
-    <a href="#info" className={styles.scrollIndicator}>
-  <span></span>
-</a>
-<section id="info" className={styles.infoSection}></section>
-  </div>
-</section>
-
-      <section className={styles.infoSection}>
+  
         <h2 className={styles.infoTitle}>
           Unsere Unterkunft
         </h2>
@@ -55,7 +33,5 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
 
 Duis autem vel eum iriure dolor in
         </p>
-      </section>
-    </main>
-  );
+    </main>)
 }
