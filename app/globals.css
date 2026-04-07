@@ -70,7 +70,7 @@ DESKTOP NAV
 }
 
 .navLinks a:hover {
-  color: #8d3052;
+  color: #76262f
 }
 
 /* underline animation */
@@ -82,7 +82,7 @@ DESKTOP NAV
 
   width: 0%;
   height: 1px;
-  background: #8d3052;
+  background: #76262f;
 
   transition: width 0.3s ease;
 }
@@ -95,11 +95,11 @@ DESKTOP NAV
 CTA BUTTON
 ========================= */
 .navButton {
-  background: #8d3052;
+  background: #76262f;
   color: white !important;
 
   padding: 8px 16px;
-  border-radius: 999px;
+  border-radius: 12px;
 
   font-weight: 500;
 
@@ -111,7 +111,7 @@ CTA BUTTON
 }
 
 .navButton:hover {
-  background: #af677a;
+  background: #a93d3d;
 }
 
 /* =========================
