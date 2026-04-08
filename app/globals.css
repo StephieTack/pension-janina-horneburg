@@ -22,7 +22,7 @@ HEADER
   z-index: 300;
 
   background: rgba(193, 178, 178, 0.96);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(5px);
 }
 
 /* =========================

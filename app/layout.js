@@ -3,18 +3,15 @@
 import "./globals.css";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import { useState } from "react";
-import Footer from "./components/page";
+import CookieBanner from "../components/Cookiebanner/CookieBanner";
+import Footer from "../components/Footer/Footer";
 
 const plusJakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
 });
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({children}) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -69,7 +66,8 @@ export default function RootLayout({
         </header>
 
         <main className="main">{children}</main>
-        <Footer />
+        <Footer/>
+        <CookieBanner />
       </body>
     </html>
   );

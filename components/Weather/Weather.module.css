@@ -1,0 +1,34 @@
+.weather {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.date {
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  stroke-width: 1.5;
+  color: #76262f;
+}
+
+.temp {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.loading {
+  font-size: 14px;
+  opacity: 0.5;
+}

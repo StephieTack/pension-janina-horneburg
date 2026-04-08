@@ -1,0 +1,41 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 80px 24px;
+  color: #2e2e2e;
+  line-height: 1.6;
+}
+
+.container h1 {
+  font-size: 2rem;
+  margin-bottom: 24px;
+  letter-spacing: 1px;
+}
+
+.container h2 {
+  font-size: 1.2rem;
+  margin-top: 32px;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #555;
+}
+
+.container p {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.container strong {
+  color: #000;
+}
+
+/* schöne Trennlinie */
+.divider {
+  width: 60px;
+  height: 2px;
+  background: #2e2e2e;
+  margin: 20px 0 30px;
+  opacity: 0.2;
+}
