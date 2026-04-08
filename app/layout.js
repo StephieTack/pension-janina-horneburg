@@ -3,8 +3,8 @@
 import "./globals.css";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import { useState } from "react";
-import CookieBanner from "../components/Cookiebanner/CookieBanner";
 import Footer from "../components/Footer/Footer";
+import CookieBanner from "../components/Cookiebanner/CookieBanner";
 
 const plusJakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -67,7 +67,7 @@ export default function RootLayout({children}) {
 
         <main className="main">{children}</main>
         <Footer/>
-        <CookieBanner />
+        <CookieBanner/>
       </body>
     </html>
   );

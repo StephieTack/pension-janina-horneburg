@@ -1,5 +1,5 @@
 import styles from "./Footer.module.css";
-import Weather from "../weather/Weather";
+import Weather from "../Weather/Weather";
 import { Mail, MapPin, Phone } from "lucide-react";
 
 export default function Footer() {
