@@ -1,37 +1,217 @@
-import styles from "./page.module.css";
+// import { Check } from "lucide-react";
+// import styles from "./page.module.css";
+// import Button from "../../components/Button/Button";
 
-export default function Zimmer() {
+// export default function ZimmerPage() {
+//   return (
+//     <div className={styles.container}>
+//       <h1 className={styles.title}>Unsere Unterkünfte</h1>
+
+//       <p className={styles.intro}>
+//         Ob gemütliches Ferienzimmer oder großzügige Ferienwohnung – bei uns
+//         finden Sie die passende Unterkunft für Ihren Aufenthalt in Horneburg.
+//       </p>
+
+//       {/* 🏡 Ferienzimmer */}
+//       <section className={styles.card}>
+//         <div className={styles.imageWrapper}>
+//           <img
+//             src="../ferienzimmer2.jpg"
+//             alt="Ferienzimmer"
+//             className={styles.image}
+//           />
+//         </div>
+
+//         <div className={styles.content}>
+//           <h2>Ferienzimmer</h2>
+//           <p>
+//             Unsere liebevoll eingerichteten Ferienzimmer bieten Ihnen alles, was
+//             Sie für einen angenehmen Aufenthalt benötigen. Perfekt für
+//             Kurzreisen, Geschäftsreisende oder Wochenendgäste.
+//           </p>
+
+//           <ul className={styles.list}>
+//             <li className={styles.featureItem}>
+//               <Check className={styles.icon} />
+//               Komfortables Bett
+//             </li>
+
+//             <li className={styles.featureItem}>
+//               <Check className={styles.icon} />
+//               Eigenes Badezimmer
+//             </li>
+
+//             <li className={styles.featureItem}>
+//               <Check className={styles.icon} />
+//               WLAN inklusive
+//             </li>
+
+//             <li className={styles.featureItem}>
+//               <Check className={styles.icon} />
+//               Ruhige Lage
+//             </li>
+
+//             <li className={styles.featureItem}>
+//               <Check className={styles.icon} />
+//               mind. xx m²
+//             </li>
+//           </ul>
+
+//           <Button href="/buchung" variant="primary">
+//             <span>Zimmer buchen</span>
+//           </Button>
+//         </div>
+//       </section>
+
+//       {/* 🏡 Ferienwohnung */}
+//       <section className={styles.cardReverse}>
+//         <div className={styles.imageWrapper}>
+//           <img
+//             src="../ferienwohnung.png"
+//             alt="Ferienwohnung"
+//             className={styles.image}
+//           />
+//         </div>
+
+//         <div className={styles.content}>
+//           <h2>Ferienwohnung</h2>
+//           <p>
+//             Unsere großzügige Ferienwohnung bietet Ihnen maximalen Komfort und
+//             viel Platz für einen längeren Aufenthalt – ideal für Familien oder
+//             kleine Gruppen.
+//           </p>
+
+//                     <ul className={styles.list}>
+//             <li className={styles.featureItem}>
+//               <Check className={styles.icon} />
+//               Voll ausgestattete Küche
+//             </li>
+
+//             <li className={styles.featureItem}>
+//               <Check className={styles.icon} />
+//               Separater Wohnbereich
+//             </li>
+
+//             <li className={styles.featureItem}>
+//               <Check className={styles.icon} />
+//               WLAN inklusive
+//             </li>
+
+//             <li className={styles.featureItem}>
+//               <Check className={styles.icon} />
+//               Mehrere Schlafmöglichkeiten
+//             </li>
+
+//             <li className={styles.featureItem}>
+//               <Check className={styles.icon} />
+//               Perfekt für längere Aufenthalte
+//             </li>
+//           </ul>
+
+//           <Button href="/buchung" variant="primary">
+//             <span>Zimmer buchen</span>
+//           </Button>
+//         </div>
+//       </section>
+//     </div>
+//   );
+// }
+
+import { Check } from "lucide-react";
+import styles from "./page.module.css";
+import Button from "../../components/Button/Button";
+
+export default function ZimmerPage() {
   return (
     <main>
-  
-        <h2 className={styles.infoTitle}>
-          Unsere Unterkunft
-        </h2>
-        <p className={styles.infoText}>
-          Wir bieten komfortable Zimmer und Ferienwohnungen
-          für Ihren Aufenthalt in Horneburg. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.  
 
-Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.  
-
-Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.  
-
-Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.  
-
-Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.   
-
-At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.  
-
-Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus.  
-
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.  
-
-Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.  
-
-Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.  
-
-Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.  
-
-Duis autem vel eum iriure dolor in
+      {/* HERO MINI */}
+      <section className={styles.heroSmall}>
+        <h1>Unsere Unterkünfte</h1>
+        <p>
+          Ob gemütliches Zimmer oder großzügige Wohnung – finden Sie Ihren perfekten Rückzugsort.
         </p>
-    </main>)
-}
+      </section>
+
+      {/* ================= FERIENZIMMER ================= */}
+      <section className={styles.section}>
+        <div className={styles.container}>
+
+          <h2>Ferienzimmer</h2>
+
+          {/* 🖼️ Galerie */}
+          <div className={styles.gallery}>
+            <img src="/ferienzimmer1.jpg" />
+            <img src="/ferienzimmer2.jpg" />
+            <img src="/ferienzimmer3.png" />
+          </div>
+
+          {/* Text */}
+          <div className={styles.textBlock}>
+            <p>
+              Unsere liebevoll eingerichteten Ferienzimmer bieten Ihnen alles,
+              was Sie für einen entspannten Aufenthalt benötigen.
+            </p>
+
+            <ul className={styles.list}>
+              <li><Check /> Komfortables Bett</li>
+              <li><Check /> Eigenes Badezimmer</li>
+              <li><Check /> WLAN inklusive</li>
+              <li><Check /> Ruhige Lage</li>
+            </ul>
+
+            <Button href="/buchung" variant="primary">
+              <span>Ferienzimmer buchen</span>
+            </Button>
+          </div>
+
+        </div>
+      </section>
+
+      {/* ================= FERIENWOHNUNG ================= */}
+      <section className={styles.sectionAlt}>
+        <div className={styles.container}>
+
+          <h2>Ferienwohnung</h2>
+
+          <div className={styles.gallery}>
+            <img src="/ferienwohnung1.png" />
+            <img src="/ferienwohnung2.png" />
+            <img src="/ferienwohnung3.png" />
+          </div>
+
+          <div className={styles.textBlock}>
+            <p>
+              Unsere großzügige Ferienwohnung bietet maximalen Komfort und viel Platz.
+            </p>
+
+            <ul className={styles.list}>
+              <li><Check /> Voll ausgestattete Küche</li>
+              <li><Check /> Separater Wohnbereich</li>
+              <li><Check /> WLAN inklusive</li>
+              <li><Check /> Ideal für Familien</li>
+            </ul>
+
+            <Button href="/buchung" variant="primary">
+              <span>Ferienwohnung buchen</span>
+            </Button>
+          </div>
+
+        </div>
+      </section>
+
+      {/* ================= CTA ================= */}
+      <section className={styles.ctaSection}>
+        <div className={styles.container}>
+          <h2>Jetzt Aufenthalt anfragen</h2>
+          <p>Wir freuen uns darauf, Sie bei uns begrüßen zu dürfen.</p>
+
+        <Button href="/buchung" variant="secondary">
+          <span>Zur Onlinebuchung</span>
+        </Button>
+        </div>
+      </section>
+
+    </main>
+  );
+} 

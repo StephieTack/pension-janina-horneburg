@@ -21,15 +21,15 @@ export default function RootLayout({children}) {
           <nav className="nav">
             {/* LOGO */}
             <a href="/" className="logo">
-              <img src="/logo_hell_klein.png" alt="Pension Janina" />
+              <img src="/logo_hell_klein.png" alt="Pension Janina Logo" />
             </a>
 
             {/* DESKTOP NAV */}
             <div className="navLinks">
               <a href="/zimmer">Zimmer</a>
               <a href="/kontakt">Kontakt</a>
-              <a href="/buchung" className="navButton">
-                Buchung
+              <a href="/buchung" className="primaryButton">
+                Onlinebuchung
               </a>
             </div>
 
@@ -49,7 +49,7 @@ export default function RootLayout({children}) {
   
   {/* 🔥 NEU: Logo im Mobile Menu */}
   <a href="/" className="mobileLogo" onClick={() => setOpen(false)}>
-    <img src="/logo_hell_klein.png" alt="Pension Janina" />
+    <img src="/logo_hell_klein.png" alt="Pension Janina Logo" />
   </a>
 
   <a href="/zimmer" onClick={() => setOpen(false)}>
@@ -59,7 +59,7 @@ export default function RootLayout({children}) {
     Kontakt
   </a>
   <a href="/buchung" className="navButton" onClick={() => setOpen(false)}>
-    Buchung
+    Onlinebuchung
   </a>
 
 </div>

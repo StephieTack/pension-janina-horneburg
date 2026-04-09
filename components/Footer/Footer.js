@@ -33,7 +33,7 @@ export default function Footer() {
 
         {/* CENTER */}
         <div className={styles.col}>
-          <img src="niedersachsen.png" alt="niedersachsen" />
+          <img src="niedersachsen.png" alt="Niedersachsen Grundriss" />
         </div>
 
         {/* RIGHT */}

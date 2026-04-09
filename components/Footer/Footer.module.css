@@ -1,6 +1,6 @@
 .footer {
   background: #2e2e2e;
-  color: white;
+  color: var(--color-bright);
   padding-top: 60px;
 }
 
@@ -28,7 +28,7 @@
   width: 30px;
   height: 30px;
   margin-top: 8px; /* optisches Alignment */
-  color: #76262f;
+  color: var(--color-primary);
 }
 
 .item p {
@@ -96,7 +96,7 @@
 }
 
 .links a:hover {
-  color: white;
+  color: var(--color-bright);
 }
 
 /* MOBILE */

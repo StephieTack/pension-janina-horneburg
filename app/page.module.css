@@ -24,19 +24,11 @@
   align-items: center;
 
   text-align: center;
-  color: white;
+  color: var(--color-bright);
 
-  background-image: url('/pension-janina2.jpg');
+  background-image: url('/ferienzimmer1.jpg');
   background-size: cover;
   background-position: center;
-}
-
-/* Overlay */
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.15);
 }
 
 /* Content */
@@ -57,8 +49,6 @@
   width: 700px;
   max-width: 80%;
   margin-bottom: 20px;
-
-  filter: drop-shadow(0 15px 40px rgba(0,0,0,0.7));
 }
 
 /* =========================
@@ -78,9 +68,9 @@
    BUTTON
 ========================= */
 
-.ctaButton {
-  background-color: #76262f;
-  color: white;
+/* .ctaButton {
+  background-color: var(--color-primary);
+  color: var(--color-bright);
 
   padding: 12px 26px;
   border-radius: 12px;
@@ -92,7 +82,28 @@
 }
 
 .ctaButton:hover {
-  background-color: #a93d3d;
+  background-color: var(--color-secondary);
+  transform: translateY(-2px);
+} */
+
+/* 🤍 HERO BUTTON (secondary, edel & leicht) */
+.secondaryButton {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: var(--color-primary);
+  padding: 12px 24px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  backdrop-filter: blur(6px);
+  border: 1px solid var(--color-primary);
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.secondaryButton:hover {
+  background-color: var(--color-bg-highlight-bright);
+  color: var(--color-primary);
   transform: translateY(-2px);
 }
 
@@ -111,24 +122,24 @@
   width: 24px;
   height: 24px;
 
-  border-bottom: 2px solid white;
-  border-right: 2px solid white;
+  border-bottom: 2px solid var(--color-bright);
+  border-right: 2px solid var(--color-bright);
 
   transform: rotate(45deg);
 
-  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.5));
+  /* filter: drop-shadow(0 4px 10px rgba(0,0,0,0.5)); */
 
   animation: bounce 1.8s infinite ease-in-out;
 }
 
 .section {
   padding: 80px 24px;
-  background: #fff;
+  background: var(--color-bright);
 }
 
 .sectionAlt {
   padding: 80px 24px;
-  background: #f7f3f4;
+  background: var(--color-bg-highlight-bright);
 }
 
 .container {
@@ -162,10 +173,10 @@
   align-items: center;
   justify-content: center;   /* 🔥 DAS ist der Fix */
   gap: 12px;
-  background: white;
+  background: var(--color-bright);
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  /* box-shadow: 0 10px 30px rgba(0,0,0,0.05); */
 }
 
 /* LIST */
@@ -188,7 +199,7 @@
 }
 
 .imageItem {
-  background: white; /* wichtig! */
+  background: var(--color-bright); /* wichtig! */
 }
 
 .imageItem img {
@@ -229,11 +240,11 @@
 .ctaSection {
   padding: 100px 24px;
   text-align: center;
-  background: #8d3052;
-  color: white;
+  background: var(--color-bg-highlight-dark);
+  color: var(--color-bright);
 }
 
-.ctaSection .ctaButton {
+.ctaSection .secondaryButton {
   margin-top: 20px;
   display: inline-block;
 }

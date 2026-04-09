@@ -1,0 +1,143 @@
+.primary {
+  position: relative;
+  display: inline-block;
+  padding: 12px 24px;
+  padding-left: 20px;
+
+  font-size: 0.9rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+
+  color: var(--color-primary);
+  text-decoration: none;
+
+  overflow: hidden;
+  transition: color 0.3s ease;
+}
+
+/* 👉 Text nach oben holen */
+.primary span {
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s ease;
+}
+
+/* 🔥 Der vertikale Strich */
+.primary::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 3px;
+  height: 60%;
+
+  background: var(--color-primary);
+  z-index: 2;
+}
+
+/* 🔥 Hintergrund Animation */
+.primary::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 0%;
+  height: 100%;
+
+  background: var(--color-primary);
+  border-radius: 8px;
+  z-index: 1;
+
+  transition: width 0.4s ease;
+}
+
+/* Text über dem Background */
+.primary {
+  z-index: 100;
+}
+
+/* 🔥 Hover Effekt */
+.primary:hover::after {
+  width: 100%;
+}
+
+/* 🔥 Text wird weiß beim Hover */
+.primary:hover {
+  color: white;
+}
+
+
+
+.secondary {
+  position: relative;
+  display: inline-block;
+  padding: 12px 24px;
+  padding-left: 20px;
+
+  font-size: 0.9rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+
+  color: var(--color-bright);
+  text-decoration: none;
+
+  overflow: hidden;
+  transition: color 0.3s ease;
+}
+
+/* 👉 Text nach oben holen */
+.secondary span {
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s ease;
+}
+
+/* 🔥 Der vertikale Strich */
+.secondary::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 3px;
+  height: 60%;
+
+  background: var(--color-bright);
+  z-index: 2;
+}
+
+/* 🔥 Hintergrund Animation */
+.secondary::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 0%;
+  height: 100%;
+
+  background: var(--color-bright);
+  border-radius: 8px;
+  z-index: 1;
+
+  transition: width 0.4s ease;
+}
+
+/* Text über dem Background */
+.secondary {
+  z-index: 100;
+}
+
+/* 🔥 Hover Effekt */
+.secondary:hover::after {
+  width: 100%;
+}
+
+/* 🔥 Textfarbe beim Hover */
+.secondary:hover {
+  color: var(--color-primary);
+}

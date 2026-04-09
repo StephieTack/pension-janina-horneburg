@@ -1,126 +1,94 @@
-/* =========================
-   ANIMATION
-========================= */
-
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0) rotate(45deg);
-  }
-  50% {
-    transform: translateY(10px) rotate(45deg);
-  }
-}
-
-/* =========================
-   HERO
-========================= */
-
-.hero {
-  position: relative;
-  min-height: 100vh;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+.heroSmall {
+  padding: 120px 20px 60px;
   text-align: center;
-  color: white;
-
-  background-image: url('/pension-janina2.jpg');
-  background-size: cover;
-  background-position: center;
+  background: var(--color-bg-highlight-bright);
 }
 
-/* Overlay */
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.15);
+.heroSmall h1 {
+  font-family: dancing-script, cursive;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
-/* Content */
-.heroContent {
-  position: relative;
-  z-index: 2;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.section {
+  padding: 80px 24px;
+  background: var(--color-bright);
 }
 
-/* =========================
-   LOGO
-========================= */
+.sectionAlt {
+  padding: 80px 24px;
+  background: var(--color-bg-highlight-bright);
+}
 
-.heroLogo {
-  width: 700px;
-  max-width: 80%;
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container h2 {
+  font-family: dancing-script, cursive;
+  font-size: 2rem;
   margin-bottom: 20px;
-
-  filter:
-    drop-shadow(0 8px 20px rgba(212, 212, 210, 0.9))
-    drop-shadow(0 25px 80px rgba(168, 45, 45, 0.9));
-
-  transform: translateZ(0); /* smoother rendering */
 }
 
-/* =========================
-   TEXT
-========================= */
-
-.heroSubtitle {
-  font-size: 1.4rem;
-  font-weight: 300;
-  letter-spacing: 0.5px;
-  opacity: 0.9;
-
-  margin-bottom: 35px;
+.container p {
+  max-width: 700px;
+  margin: 0 auto 16px;
+  line-height: 1.6;
 }
 
-/* =========================
-   BUTTON
-========================= */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  margin: 40px 0;
+}
 
-.ctaButton {
-  background-color: #8d3052;
-  color: white;
-
-  padding: 12px 26px;
+.gallery img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
   border-radius: 12px;
-
-  font-size: 0.95rem;
-  font-weight: 500;
-
-  transition: all 0.25s ease;
+  transition: transform 0.3s ease;
 }
 
-.ctaButton:hover {
-  background-color: #af677a;
-  transform: translateY(-2px);
+.gallery img:hover {
+  transform: scale(1.03);
 }
 
-/* =========================
-   SCROLL INDICATOR
-========================= */
-
-.scrollIndicator {
-  margin-top: 60px;
-  opacity: 0.8;
+.textBlock {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-.scrollIndicator span {
-  display: block;
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+}
 
-  width: 24px;
-  height: 24px;
+.list li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
 
-  border-bottom: 2px solid white;
-  border-right: 2px solid white;
+.ctaSection {
+  padding: 100px 24px;
+  text-align: center;
+  background: var(--color-bg-highlight-dark);
+  color: var(--color-bright);
+}
 
-  transform: rotate(45deg);
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
 
-  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.5));
-
-  animation: bounce 1.8s infinite ease-in-out;
+  .gallery img {
+    height: 200px;
+  }
 }

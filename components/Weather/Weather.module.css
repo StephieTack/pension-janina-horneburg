@@ -20,7 +20,7 @@
   width: 50px;
   height: 50px;
   stroke-width: 1.5;
-  color: #76262f;
+  color: var(--color-primary);
 }
 
 .temp {

@@ -1,3 +1,4 @@
+import Button from "../components/Button/Button";
 import styles from "./page.module.css";
 import {
   Bed,
@@ -17,7 +18,7 @@ export default function Home() {
         <div className={styles.heroContent}>
           <img
             src="/logo_hell.png"
-            alt="Pension Janina Horneburg"
+            alt="Pension Janina Horneburg Logo"
             className={styles.heroLogo}
           />
 
@@ -25,8 +26,8 @@ export default function Home() {
             Ankommen. Durchatmen. Wohlfühlen.
           </p>
 
-          <a href="/buchung" className={styles.ctaButton}>
-            Jetzt anfragen
+          <a href="/zimmer" className={styles.secondaryButton}>
+            Zimmer ansehen
           </a>
 
           <a href="#welcome" className={styles.scrollIndicator}>
@@ -111,13 +112,13 @@ export default function Home() {
       {/* ================= IMAGE STRIP ================= */}
       <section className={styles.imageStrip}>
         <div className={styles.imageItem}>
-          <img src="/stade_fleet.jpeg" alt="Landschaft" />
+          <img src="/stade_fleet.jpeg" alt="Stade Fleet" />
         </div>
         <div className={styles.imageItem}>
-          <img src="/apfelernte.jpeg" alt="Radfahren" />
+          <img src="/apfelernte.jpeg" alt="Apfelernte" />
         </div>
         <div className={styles.imageItem} >
-          <img src="/stade_see.jpeg" alt="Wandern" />
+          <img src="/stade_see.jpeg" alt="Stade See" />
         </div>
       </section>
 
@@ -139,9 +140,9 @@ export default function Home() {
           <h2>Jetzt Aufenthalt anfragen</h2>
           <p>Wir freuen uns darauf, Sie bei uns begrüßen zu dürfen.</p>
 
-          <a href="/buchung" className={styles.ctaButton}>
-            Zur Buchung
-          </a>
+        <Button href="/buchung" variant="secondary">
+          <span>Zur Onlinebuchung</span>
+        </Button>
         </div>
       </section>
 

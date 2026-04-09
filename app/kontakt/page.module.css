@@ -74,7 +74,7 @@
   margin-top: 10px;
   padding: 12px;
   background: #2e2e2e;
-  color: white;
+  color: var(--color-bright);
   border: none;
   border-radius: 6px;
   cursor: pointer;
