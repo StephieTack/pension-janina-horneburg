@@ -47,9 +47,9 @@ export default function Footer() {
       <div className={styles.bottom}>
         <p>© Pension Janina</p>
         <div className={styles.links}>
-          <a href="#">AGB</a>
-          <a href="#">Impressum</a>
-          <a href="#">Datenschutz</a>
+          <a href="/agb">AGB</a>
+          <a href="/impressum">Impressum</a>
+          <a href="/datenschutz">Datenschutz</a>
           <a href="/cookies">Cookies</a>
         </div>
       </div>

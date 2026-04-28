@@ -1,4 +1,5 @@
 import Button from "../components/Button/Button";
+import Hero from "../components/Hero/Hero";
 import styles from "./page.module.css";
 import {
   Bed,
@@ -14,27 +15,17 @@ export default function Home() {
     <main>
 
       {/* ================= HERO ================= */}
-      <section className={styles.hero}>
-        <div className={styles.heroContent}>
-          <img
-            src="/logo_hell.png"
-            alt="Pension Janina Horneburg Logo"
-            className={styles.heroLogo}
-          />
-
-          <p className={styles.heroSubtitle}>
-            Ankommen. Durchatmen. Wohlfühlen.
-          </p>
-
-          <a href="/zimmer" className={styles.secondaryButton}>
-            Zimmer ansehen
-          </a>
-
-          <a href="#welcome" className={styles.scrollIndicator}>
-            <span></span>
-          </a>
-        </div>
-      </section>
+      <Hero
+        image="/ferienzimmer4.jpg"
+        logo="/logo_hell.png"
+        subtitle="Ankommen. Durchatmen. Wohlfühlen."
+        showScroll
+        scrollTarget="#welcome"
+      >
+        <Button href="/zimmer" variant="secondary">
+          <span>Zimmer ansehen</span>
+        </Button>
+      </Hero>
 
       {/* ================= WELCOME ================= */}
       <section id="welcome" className={styles.section}>

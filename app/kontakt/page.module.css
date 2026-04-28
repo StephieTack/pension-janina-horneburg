@@ -1,92 +1,120 @@
+/* ================= SECTION ================= */
+.section {
+  padding: 80px 24px;
+  background: var(--color-bright);
+}
+
 .container {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 80px 24px;
-  color: #2e2e2e;
+  text-align: center;
 }
 
-.container h1 {
+.container h2 {
+  font-family: dancing-script, cursive;
   font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-.divider {
-  width: 60px;
-  height: 2px;
-  background: #2e2e2e;
   margin-bottom: 40px;
-  opacity: 0.2;
 }
 
-/* GRID */
+/* ================= GRID ================= */
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
+  text-align: left;
 }
 
-/* INFOS */
+/* ================= INFOS ================= */
 .info {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  font-style: normal; /* wichtig für <address> */
 }
 
 .item {
   display: flex;
+  gap: 16px;
   align-items: flex-start;
-  gap: 12px;
-  color: #555;
 }
 
-.icon {
-  width: 20px;
-  height: 20px;
-  margin-top: 3px;
+.item svg {
+  color: var(--color-primary);
+  min-width: 24px;
 }
 
-/* FORM */
+/* ================= PROFILE ================= */
+.profile {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profileImage {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.profileName {
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+/* ================= FORM ================= */
 .form {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  background: #fafafa;
-  padding: 24px;
-  border-radius: 12px;
 }
 
 .form input,
 .form textarea {
   padding: 12px;
   border: 1px solid #ddd;
-  border-radius: 6px;
-  font-size: 0.9rem;
-  font-family: inherit;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  transition: 0.2s;
 }
 
 .form input:focus,
 .form textarea:focus {
   outline: none;
-  border-color: #2e2e2e;
+  border-color: var(--color-primary);
 }
 
 .form button {
-  margin-top: 10px;
-  padding: 12px;
-  background: #2e2e2e;
+  background: var(--color-primary);
   color: var(--color-bright);
+  padding: 12px;
   border: none;
-  border-radius: 6px;
+  border-radius: 10px;
   cursor: pointer;
-  font-size: 0.9rem;
-  transition: all 0.2s ease;
+  transition: 0.3s;
 }
 
 .form button:hover {
-  background: #444;
+  opacity: 0.9;
 }
 
-/* MOBILE */
+/* ================= STATUS ================= */
+.status {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+/* ================= CTA ================= */
+.ctaSection {
+  padding: 100px 24px;
+  text-align: center;
+  background: var(--color-bg-highlight-dark);
+  color: var(--color-bright);
+}
+
+/* ================= MOBILE ================= */
 @media (max-width: 768px) {
   .grid {
     grid-template-columns: 1fr;

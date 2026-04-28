@@ -1,10 +1,8 @@
-import styles from "./page.module.css";
+import LegalLayout from "../../components/LegalLayout/LegalLayout";
 
 export default function CookiesPage() {
   return (
-    <main className={styles.container}>
-      <h1>Cookie-Richtlinie</h1>
-      <div className={styles.divider}></div>
+    <LegalLayout title="Allgemeine Geschäftsbedingungen">
 
       <p>
         Diese Website verwendet Cookies, um die Nutzung zu verbessern und bestimmte Funktionen bereitzustellen.
@@ -24,6 +22,6 @@ export default function CookiesPage() {
       <p>
         Sie können Cookies jederzeit über die Einstellungen Ihres Browsers deaktivieren oder löschen.
       </p>
-    </main>
+    </LegalLayout>
   );
 }

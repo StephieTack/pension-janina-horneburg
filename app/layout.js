@@ -5,6 +5,7 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import { useState } from "react";
 import Footer from "../components/Footer/Footer";
 import CookieBanner from "../components/Cookiebanner/CookieBanner";
+import Button from "../components/Button/Button";
 
 const plusJakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -26,11 +27,11 @@ export default function RootLayout({children}) {
 
             {/* DESKTOP NAV */}
             <div className="navLinks">
-              <a href="/zimmer">Zimmer</a>
-              <a href="/kontakt">Kontakt</a>
-              <a href="/buchung" className="primaryButton">
-                Onlinebuchung
-              </a>
+              <a href="/zimmer" className="navLink">Zimmer</a>
+              <a href="/kontakt" className="navLink">Kontakt</a>
+              <Button href="/buchung" variant="secondary">
+                <span>Onlinebuchung</span>
+              </Button>
             </div>
 
             {/* BURGER */}
