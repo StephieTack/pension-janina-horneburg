@@ -1,0 +1,107 @@
+/* ================= SECTION ================= */
+.section {
+  padding: 80px 24px;
+  background: var(--color-bright);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.container h2 {
+  font-family: dancing-script, cursive;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* ================= ACCORDION ================= */
+
+.accordion {
+  max-width: 800px;
+  margin: 40px auto 0;
+}
+
+/* ITEM */
+.accordionItem {
+  border-radius: 10px;
+  border: 1px solid var(--color-bg-navi);
+  overflow: hidden;
+  margin-bottom: 12px;
+  background: white;
+  transition: all 0.3s ease;
+  
+}
+
+/* HEADER (Button) */
+.accordionHeader {
+  width: 100%;
+  padding: 18px 20px;
+
+  display: flex;
+  justify-content: space-between;
+
+  background: var(--color-bg-highlight-bright);
+  border: none;
+  cursor: pointer;
+
+  font-size: 0.9rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  color: var(--color-dark);
+
+  transition: all 0.3s ease;
+}
+
+/* HOVER */
+.accordionHeader:hover {
+  background: #eee;
+}
+
+/* ACTIVE STATE */
+.active .accordionHeader {
+  background: var(--color-primary);
+  color: var(--color-bright);
+}
+
+/* ICON */
+.icon {
+  transition: transform 0.3s ease;
+}
+
+/* drehen wenn offen */
+.active .icon {
+  transform: rotate(180deg);
+}
+
+/* CONTENT WRAPPER (für smooth animation) */
+.accordionContent {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+/* geöffnet */
+.active .accordionContent {
+  max-height: 500px; /* reicht für deinen Content */
+}
+
+/* INNER CONTENT */
+.accordionInner {
+  padding: 20px;
+  color: var(--color-dark);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* LISTEN */
+.accordionInner ul {
+  padding-left: 18px;
+  margin-top: 10px;
+}
+
+.accordionInner li {
+  margin-bottom: 6px;
+}

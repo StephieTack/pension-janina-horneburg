@@ -12,23 +12,34 @@ export default function Footer() {
 <div className={styles.col}>
   <h3>PENSION JANINA</h3>
 
-  <div className={styles.item}>
-    <MapPin className={styles.icon} />
-    <div>
-      <p>Isern-Hinnerk-Weg 1a</p>
-      <p>21640 Horneburg</p>
-    </div>
-  </div>
+  <address className={styles.info}>
+    <a
+      href="https://maps.google.com/?q=Isern-Hinnerk-Weg+1a+21640+Horneburg"
+      target="_blank"
+      rel="noopener noreferrer"
+      className={styles.contactLink}
+    >
+      <MapPin />
 
-  <div className={styles.item}>
-    <Phone className={styles.icon} />
-    <p>04163 812440</p>
-  </div>
+      <div>
+        <span>Isern-Hinnerk-Weg 1a</span>
+        <span>21640 Horneburg</span>
+      </div>
+    </a>
 
-  <div className={styles.item}>
-    <Mail className={styles.icon} />
-    <p>pension-janina@t-online.de</p>
-  </div>
+    <a href="tel:+494163812440" className={styles.contactLink}>
+      <Phone />
+      <span>04163 812440</span>
+    </a>
+
+    <a
+      href="mailto:pension-janina@t-online.de"
+      className={styles.contactLink}
+    >
+      <Mail />
+      <span>pension-janina@t-online.de</span>
+    </a>
+  </address>
 </div>
 
         {/* CENTER */}

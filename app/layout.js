@@ -29,6 +29,7 @@ export default function RootLayout({children}) {
             <div className="navLinks">
               <a href="/zimmer" className="navLink">Zimmer</a>
               <a href="/kontakt" className="navLink">Kontakt</a>
+              <a href="/infos" className="navLink">Gästeinformationen</a>
               <Button href="/buchung" variant="secondary">
                 <span>Onlinebuchung</span>
               </Button>
@@ -47,23 +48,26 @@ export default function RootLayout({children}) {
 
           {/* MOBILE MENU */}
           <div className={`mobileMenu ${open ? "show" : ""}`}>
-  
-  {/* 🔥 NEU: Logo im Mobile Menu */}
-  <a href="/" className="mobileLogo" onClick={() => setOpen(false)}>
-    <img src="/logo_hell_klein.png" alt="Pension Janina Logo" />
-  </a>
+          
+          {/* 🔥 NEU: Logo im Mobile Menu */}
+          <a href="/" className="mobileLogo" onClick={() => setOpen(false)}>
+            <img src="/logo_hell_klein.png" alt="Pension Janina Logo" />
+          </a>
 
-  <a href="/zimmer" onClick={() => setOpen(false)}>
-    Zimmer
-  </a>
-  <a href="/kontakt" onClick={() => setOpen(false)}>
-    Kontakt
-  </a>
-  <a href="/buchung" className="navButton" onClick={() => setOpen(false)}>
-    Onlinebuchung
-  </a>
+          <a href="/zimmer" onClick={() => setOpen(false)}>
+            Zimmer
+          </a>
+          <a href="/kontakt" onClick={() => setOpen(false)}>
+            Kontakt
+          </a>
+          <a href="/infos" onClick={() => setOpen(false)}>
+            Gästeinformationen
+          </a>
+          <a href="/buchung" className="navButton" onClick={() => setOpen(false)}>
+            Onlinebuchung
+          </a>
 
-</div>
+        </div>
         </header>
 
         <main className="main">{children}</main>

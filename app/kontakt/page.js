@@ -46,23 +46,32 @@ export default function Kontakt() {
 
           <div className={styles.grid}>
             <address className={styles.info}>
-              <div className={styles.item}>
+              <a
+                href="https://maps.google.com/?q=Isern-Hinnerk-Weg+1a+21640+Horneburg"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.contactLink}
+              >
                 <MapPin />
+
                 <div>
-                  <p>Isern-Hinnerk-Weg 1a</p>
-                  <p>21640 Horneburg</p>
+                  <span>Isern-Hinnerk-Weg 1a</span>
+                  <span>21640 Horneburg</span>
                 </div>
-              </div>
+              </a>
 
-              <div className={styles.item}>
+              <a href="tel:+494163812440" className={styles.contactLink}>
                 <Phone />
-                <p>04163 812440</p>
-              </div>
+                <span>04163 812440</span>
+              </a>
 
-              <div className={styles.item}>
+              <a
+                href="mailto:pension-janina@t-online.de"
+                className={styles.contactLink}
+              >
                 <Mail />
-                <p>pension-janina@t-online.de</p>
-              </div>
+                <span>pension-janina@t-online.de</span>
+              </a>
             </address>
 
             <form className={styles.form} onSubmit={sendEmail}>

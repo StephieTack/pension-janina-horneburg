@@ -32,15 +32,35 @@
   font-style: normal; /* wichtig für <address> */
 }
 
-.item {
+.contactLink {
   display: flex;
-  gap: 16px;
-  align-items: flex-start;
+  align-items: center;
+  gap: 10px;
+
+  color: black;
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+
+  cursor: pointer;
 }
 
-.item svg {
+.contactLink:hover {
+  color: var(--color-primary);
+}
+
+.contactLink div {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactLink svg {
   color: var(--color-primary);
   min-width: 24px;
+}
+
+.contactLink:hover svg {
+  transform: scale(1.1);
 }
 
 /* ================= PROFILE ================= */
