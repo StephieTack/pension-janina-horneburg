@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import styles from "./BookingWidget.module.css";
 
 export default function BookingWidget() {
   useEffect(() => {
@@ -46,5 +47,9 @@ export default function BookingWidget() {
     };
   }, []);
 
-  return <div id="ebFrontEndFrame"></div>;
+  return (
+    <section className={styles.wrapper}>
+      <div id="ebFrontEndFrame"></div>
+    </section>
+  );
 }
