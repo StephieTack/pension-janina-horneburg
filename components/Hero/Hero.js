@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./Hero.module.css";
 
 export default function Hero({
@@ -12,9 +13,7 @@ export default function Hero({
 }) {
   return (
     <section
-      className={`${styles.hero} ${
-        height === "medium" ? styles.medium : ""
-      }`}
+      className={`${styles.hero} ${height === "medium" ? styles.medium : ""}`}
       style={{ backgroundImage: `url(${image})` }}
     >
       {/* CONTENT */}
@@ -32,9 +31,9 @@ export default function Hero({
 
       {/* 🔥 SCROLL INDICATOR (RAUS AUS CONTENT!) */}
       {showScroll && (
-        <a href={scrollTarget} className={styles.scrollIndicator}>
+        <Link href={scrollTarget} className={styles.scrollIndicator}>
           <span></span>
-        </a>
+        </Link>
       )}
     </section>
   );

@@ -5,6 +5,7 @@ import { MapPin, Phone, Mail } from "lucide-react";
 import emailjs from "emailjs-com";
 import { useState } from "react";
 import Hero from "../../components/Hero/Hero";
+import Link from "next/link";
 
 export default function Kontakt() {
   const [status, setStatus] = useState("");
@@ -46,7 +47,7 @@ export default function Kontakt() {
 
           <div className={styles.grid}>
             <address className={styles.info}>
-              <a
+              <Link
                 href="https://maps.google.com/?q=Isern-Hinnerk-Weg+1a+21640+Horneburg"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -58,26 +59,36 @@ export default function Kontakt() {
                   <span>Isern-Hinnerk-Weg 1a</span>
                   <span>21640 Horneburg</span>
                 </div>
-              </a>
+              </Link>
 
-              <a href="tel:+494163812440" className={styles.contactLink}>
+              <Link href="tel:+494163812440" className={styles.contactLink}>
                 <Phone />
                 <span>04163 812440</span>
-              </a>
+              </Link>
 
-              <a
+              <Link
                 href="mailto:pension-janina@t-online.de"
                 className={styles.contactLink}
               >
                 <Mail />
                 <span>pension-janina@t-online.de</span>
-              </a>
+              </Link>
             </address>
 
             <form className={styles.form} onSubmit={sendEmail}>
               <input name="name" type="text" placeholder="Ihr Name" required />
-              <input name="email" type="email" placeholder="Ihre E-Mail" required />
-              <textarea name="message" rows="5" placeholder="Ihre Nachricht" required />
+              <input
+                name="email"
+                type="email"
+                placeholder="Ihre E-Mail"
+                required
+              />
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Ihre Nachricht"
+                required
+              />
 
               <button type="submit">Nachricht senden</button>
 

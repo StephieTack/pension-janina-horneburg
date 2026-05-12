@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useState } from "react";
 import styles from "./Weather.module.css";
 import { Sun, Cloud, CloudRain, CloudSnow } from "lucide-react";
@@ -10,7 +12,8 @@ export default function Weather() {
       "https://api.open-meteo.com/v1/forecast?latitude=53.48&longitude=9.50&current_weather=true"
     )
       .then((res) => res.json())
-      .then((data) => {setWeather(data.current_weather);
+      .then((data) => {
+        setWeather(data.current_weather);
       });
   }, []);
 

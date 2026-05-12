@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./Button.module.css";
 
 export default function Button({ children, variant = "primary", href }) {
@@ -5,9 +6,9 @@ export default function Button({ children, variant = "primary", href }) {
 
   if (href) {
     return (
-      <a href={href} className={className}>
+      <Link href={href} className={className}>
         {children}
-      </a>
+      </Link>
     );
   }
 

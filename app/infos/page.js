@@ -18,11 +18,13 @@ export default function Infos() {
       content: (
         <>
           <p>Am Anreisetag steht dir dein Zimmer ab 15 Uhr zur Verfügung.</p>
-          <p>Am Abreisetag bitten wir dich, das Zimmer bis 11 Uhr freizugeben.</p>
           <p>
-            Unsere Rezeptionszeiten sind von 8 bis 18 Uhr. Eine spätere Anreise ist
-            jederzeit über unseren Self-Check-in möglich – bitte gib uns dazu
-            rechtzeitig Bescheid.
+            Am Abreisetag bitten wir dich, das Zimmer bis 11 Uhr freizugeben.
+          </p>
+          <p>
+            Unsere Rezeptionszeiten sind von 8 bis 18 Uhr. Eine spätere Anreise
+            ist jederzeit über unseren Self-Check-in möglich – bitte gib uns
+            dazu rechtzeitig Bescheid.
           </p>
         </>
       ),
@@ -31,9 +33,15 @@ export default function Infos() {
       title: "Preise",
       content: (
         <>
-          <p><strong>Einzelzimmer:</strong> 63,00 € / Nacht</p>
-          <p><strong>Doppelzimmer:</strong> 79,00 € / Nacht</p>
-          <p><strong>Ferienwohnung:</strong> 97,00 € / Nacht</p>
+          <p>
+            <strong>Einzelzimmer:</strong> 63,00 € / Nacht
+          </p>
+          <p>
+            <strong>Doppelzimmer:</strong> 79,00 € / Nacht
+          </p>
+          <p>
+            <strong>Ferienwohnung:</strong> 97,00 € / Nacht
+          </p>
           <p>Aufbettung ab der 3. Person: 20,00 €</p>
           <p>Endreinigung Ferienwohnung: 20,00 €</p>
           <p>Frühstück: 9,00 € pro Person</p>
@@ -65,8 +73,8 @@ export default function Infos() {
       title: "Parken & Anfahrt",
       content: (
         <p>
-          Parkmöglichkeiten befinden sich direkt an der Pension.
-          Die genaue Wegbeschreibung erhältst du mit deiner Buchungsbestätigung.
+          Parkmöglichkeiten befinden sich direkt an der Pension. Die genaue
+          Wegbeschreibung erhältst du mit deiner Buchungsbestätigung.
         </p>
       ),
     },
@@ -74,7 +82,8 @@ export default function Infos() {
       title: "Haustiere",
       content: (
         <p>
-          Haustiere sind im gesamten Haus gegen einen Aufpreis von 8 € pro Nacht erlaubt.
+          Haustiere sind im gesamten Haus gegen einen Aufpreis von 8 € pro Nacht
+          erlaubt.
         </p>
       ),
     },
@@ -82,8 +91,8 @@ export default function Infos() {
       title: "Anzahlung",
       content: (
         <p>
-          Für deine Buchung wird eine Anzahlung von 25 % innerhalb von 7 Tagen nach
-          Erhalt der Buchungsbestätigung fällig.
+          Für deine Buchung wird eine Anzahlung von 25 % innerhalb von 7 Tagen
+          nach Erhalt der Buchungsbestätigung fällig.
         </p>
       ),
     },
@@ -140,9 +149,7 @@ export default function Infos() {
                 </button>
 
                 <div className={styles.accordionContent}>
-                  <div className={styles.accordionInner}>
-                    {item.content}
-                  </div>
+                  <div className={styles.accordionInner}>{item.content}</div>
                 </div>
               </div>
             ))}

@@ -1,78 +1,30 @@
-"use client";
-
 import "./globals.css";
 import { Plus_Jakarta_Sans } from "next/font/google";
-import { useState } from "react";
+
 import Footer from "../components/Footer/Footer";
-import CookieBanner from "../components/Cookiebanner/CookieBanner";
-import Button from "../components/Button/Button";
+import Navigation from "../components/Navigation/Navigation";
 
 const plusJakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
 });
 
-export default function RootLayout({children}) {
-  const [open, setOpen] = useState(false);
+export const metadata = {
+  title: "Pension Janina",
+  description: "Zimmer und Unterkünfte in Horneburg",
+};
 
+export default function RootLayout({ children }) {
   return (
-    <html lang="de">
+    <html lang="de" data-scroll-behavior="smooth">
       <body className={plusJakarta.className}>
         <header className="header">
-          <nav className="nav">
-            {/* LOGO */}
-            <a href="/" className="logo">
-              <img src="/logo_hell_klein.png" alt="Pension Janina Logo" />
-            </a>
-
-            {/* DESKTOP NAV */}
-            <div className="navLinks">
-              <a href="/zimmer" className="navLink">Zimmer</a>
-              <a href="/kontakt" className="navLink">Kontakt</a>
-              <a href="/infos" className="navLink">Gästeinformationen</a>
-              <Button href="/buchung" variant="secondary">
-                <span>Onlinebuchung</span>
-              </Button>
-            </div>
-
-            {/* BURGER */}
-            <button
-              className={`burger ${open ? "open" : ""}`}
-              onClick={() => setOpen(!open)}
-            >
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
-          </nav>
-
-          {/* MOBILE MENU */}
-          <div className={`mobileMenu ${open ? "show" : ""}`}>
-          
-          {/* 🔥 NEU: Logo im Mobile Menu */}
-          <a href="/" className="mobileLogo" onClick={() => setOpen(false)}>
-            <img src="/logo_hell_klein.png" alt="Pension Janina Logo" />
-          </a>
-
-          <a href="/zimmer" onClick={() => setOpen(false)}>
-            Zimmer
-          </a>
-          <a href="/kontakt" onClick={() => setOpen(false)}>
-            Kontakt
-          </a>
-          <a href="/infos" onClick={() => setOpen(false)}>
-            Gästeinformationen
-          </a>
-          <a href="/buchung" className="navButton" onClick={() => setOpen(false)}>
-            Onlinebuchung
-          </a>
-
-        </div>
+          <Navigation />
         </header>
 
         <main className="main">{children}</main>
-        <Footer/>
-        <CookieBanner/>
+
+        <Footer />
       </body>
     </html>
   );

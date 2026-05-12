@@ -3,7 +3,8 @@
 ========================= */
 
 @keyframes bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0) rotate(45deg);
   }
   50% {
@@ -26,7 +27,7 @@
   text-align: center;
   color: var(--color-bright);
 
-  background-image: url('/ferienzimmer1.jpg');
+  background-image: url("/ferienzimmer1.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -171,7 +172,7 @@
 .featureItem {
   display: flex;
   align-items: center;
-  justify-content: center;   /* 🔥 DAS ist der Fix */
+  justify-content: center; /* 🔥 DAS ist der Fix */
   gap: 12px;
   background: var(--color-bright);
   padding: 20px;

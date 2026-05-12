@@ -1,12 +1,10 @@
-import styles from "./page.module.css";
+import BookingWidget from "../../components/BookingWidget/BookingWidget";
 
-export default function Buchung() {
 
+export default function BookingPage() {
   return (
-      <div className={styles.wrapper}>
-  <iframe
-    src="https://beds24.com/booking2.php?propid=319626&hidefooter=yes&advancedays=2&referer=iframe&showsearch=0"
-    className={styles.iframe}
-  ></iframe>
-</div>)
+    <main>
+      <BookingWidget />
+    </main>
+  );
 }

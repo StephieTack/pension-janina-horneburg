@@ -13,7 +13,6 @@ import {
 export default function Home() {
   return (
     <main>
-
       {/* ================= HERO ================= */}
       <Hero
         image="/ferienzimmer4.jpg"
@@ -32,9 +31,9 @@ export default function Home() {
         <div className={styles.container}>
           <h2>Willkommen in der Pension Janina</h2>
           <p>
-            Ich bin Janina Ruprecht und führe die Pension in zweiter Generation –
-            mit viel Herz und dem Anspruch, Ihnen einen entspannten und angenehmen
-            Aufenthalt zu bieten.
+            Ich bin Janina Ruprecht und führe die Pension in zweiter Generation
+            – mit viel Herz und dem Anspruch, Ihnen einen entspannten und
+            angenehmen Aufenthalt zu bieten.
           </p>
           <p>
             Freuen Sie sich auf moderne, liebevoll eingerichtete Zimmer und
@@ -108,7 +107,7 @@ export default function Home() {
         <div className={styles.imageItem}>
           <img src="/apfelernte.jpeg" alt="Apfelernte" />
         </div>
-        <div className={styles.imageItem} >
+        <div className={styles.imageItem}>
           <img src="/stade_see.jpeg" alt="Stade See" />
         </div>
       </section>
@@ -131,12 +130,11 @@ export default function Home() {
           <h2>Jetzt Aufenthalt anfragen</h2>
           <p>Wir freuen uns darauf, Sie bei uns begrüßen zu dürfen.</p>
 
-        <Button href="/buchung" variant="secondary">
-          <span>Zur Onlinebuchung</span>
-        </Button>
+          <Button href="/buchung" variant="secondary">
+            <span>Zur Onlinebuchung</span>
+          </Button>
         </div>
       </section>
-
     </main>
   );
 }

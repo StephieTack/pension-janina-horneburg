@@ -124,19 +124,18 @@ import Button from "../../components/Button/Button";
 export default function ZimmerPage() {
   return (
     <main>
-
       {/* HERO MINI */}
       <section className={styles.heroSmall}>
         <h1>Unsere Unterkünfte</h1>
         <p>
-          Ob gemütliches Zimmer oder großzügige Wohnung – finden Sie Ihren perfekten Rückzugsort.
+          Ob gemütliches Zimmer oder großzügige Wohnung – finden Sie Ihren
+          perfekten Rückzugsort.
         </p>
       </section>
 
       {/* ================= FERIENZIMMER ================= */}
       <section className={styles.section}>
         <div className={styles.container}>
-
           <h2>Ferienzimmer</h2>
 
           {/* 🖼️ Galerie */}
@@ -154,24 +153,30 @@ export default function ZimmerPage() {
             </p>
 
             <ul className={styles.list}>
-              <li><Check /> Komfortables Bett</li>
-              <li><Check /> Eigenes Badezimmer</li>
-              <li><Check /> WLAN inklusive</li>
-              <li><Check /> Ruhige Lage</li>
+              <li>
+                <Check /> Komfortables Bett
+              </li>
+              <li>
+                <Check /> Eigenes Badezimmer
+              </li>
+              <li>
+                <Check /> WLAN inklusive
+              </li>
+              <li>
+                <Check /> Ruhige Lage
+              </li>
             </ul>
 
             <Button href="/buchung" variant="primary">
               <span>Ferienzimmer buchen</span>
             </Button>
           </div>
-
         </div>
       </section>
 
       {/* ================= FERIENWOHNUNG ================= */}
       <section className={styles.sectionAlt}>
         <div className={styles.container}>
-
           <h2>Ferienwohnung</h2>
 
           <div className={styles.gallery}>
@@ -182,21 +187,29 @@ export default function ZimmerPage() {
 
           <div className={styles.textBlock}>
             <p>
-              Unsere großzügige Ferienwohnung bietet maximalen Komfort und viel Platz.
+              Unsere großzügige Ferienwohnung bietet maximalen Komfort und viel
+              Platz.
             </p>
 
             <ul className={styles.list}>
-              <li><Check /> Voll ausgestattete Küche</li>
-              <li><Check /> Separater Wohnbereich</li>
-              <li><Check /> WLAN inklusive</li>
-              <li><Check /> Ideal für Familien</li>
+              <li>
+                <Check /> Voll ausgestattete Küche
+              </li>
+              <li>
+                <Check /> Separater Wohnbereich
+              </li>
+              <li>
+                <Check /> WLAN inklusive
+              </li>
+              <li>
+                <Check /> Ideal für Familien
+              </li>
             </ul>
 
             <Button href="/buchung" variant="primary">
               <span>Ferienwohnung buchen</span>
             </Button>
           </div>
-
         </div>
       </section>
 
@@ -206,12 +219,11 @@ export default function ZimmerPage() {
           <h2>Jetzt Aufenthalt anfragen</h2>
           <p>Wir freuen uns darauf, Sie bei uns begrüßen zu dürfen.</p>
 
-        <Button href="/buchung" variant="secondary">
-          <span>Zur Onlinebuchung</span>
-        </Button>
+          <Button href="/buchung" variant="secondary">
+            <span>Zur Onlinebuchung</span>
+          </Button>
         </div>
       </section>
-
     </main>
   );
-} 
+}
