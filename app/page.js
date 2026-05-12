@@ -121,6 +121,9 @@ export default function Home() {
             Ausflüge in die Umgebung – bei uns finden Sie den idealen
             Ausgangspunkt für Ihre Auszeit.
           </p>
+          <Button href="/umgebung" variant="primary">
+            <span>Umgebung entdecken</span>
+          </Button>
         </div>
       </section>
 

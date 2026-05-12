@@ -18,17 +18,27 @@ export default function Navigation() {
         {/* DESKTOP NAV */}
         <div className="navLinks">
           <Link href="/zimmer" className="navLink">
-            Zimmer
+            Zimmer & Preise
           </Link>
+
+          <Link href="/infos" className="navLink">
+            Wissenswertes
+          </Link>
+
+          <Link href="/umgebung" className="navLink">
+            Umgebung
+          </Link>
+
+          <Link href="/buchungsanfrage" className="navLink">
+            Buchungsanfrage
+          </Link>
+
           <Link href="/kontakt" className="navLink">
             Kontakt
           </Link>
-          <Link href="/infos" className="navLink">
-            Gästeinformationen
-          </Link>
 
           <Button href="/buchung" variant="secondary">
-            <span>Onlinebuchung</span>
+            <span>Buchung</span>
           </Button>
         </div>
 
@@ -50,15 +60,23 @@ export default function Navigation() {
         </Link>
 
         <Link href="/zimmer" onClick={() => setOpen(false)}>
-          Zimmer
+          Zimmer & Preise
+        </Link>
+
+        <Link href="/infos" onClick={() => setOpen(false)}>
+          Wissenswertes
+        </Link>
+
+        <Link href="/umgebung" onClick={() => setOpen(false)}>
+          Umgebung
+        </Link>
+
+        <Link href="/buchungsanfrage" onClick={() => setOpen(false)}>
+          Buchungsanfrage
         </Link>
 
         <Link href="/kontakt" onClick={() => setOpen(false)}>
           Kontakt
-        </Link>
-
-        <Link href="/infos" onClick={() => setOpen(false)}>
-          Gästeinformationen
         </Link>
 
         <Link
@@ -66,7 +84,7 @@ export default function Navigation() {
           className="navButton"
           onClick={() => setOpen(false)}
         >
-          Onlinebuchung
+          Buchung
         </Link>
       </div>
     </>

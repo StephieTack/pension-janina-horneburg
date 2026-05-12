@@ -1,0 +1,15 @@
+.heroSmall {
+  padding: 120px 20px 60px;
+  text-align: center;
+  background: var(--color-bg-highlight-bright);
+}
+
+.heroSmall h1 {
+  font-family: dancing-script, cursive;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.section {
+  padding: 80px 24px;
+}

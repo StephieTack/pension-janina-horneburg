@@ -114,7 +114,7 @@ export default function Infos() {
       <Hero
         title="Wissenswertes von A bis Z"
         subtitle="Alle wichtigen Infos für deinen Aufenthalt"
-        image="/janina_ruprecht2.jpg"
+        image="/gaestebuch.jpg"
         height="medium"
         showScroll
         scrollTarget="#gaesteinformationen"

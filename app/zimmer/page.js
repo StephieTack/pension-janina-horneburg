@@ -1,148 +1,33 @@
-// import { Check } from "lucide-react";
-// import styles from "./page.module.css";
-// import Button from "../../components/Button/Button";
-
-// export default function ZimmerPage() {
-//   return (
-//     <div className={styles.container}>
-//       <h1 className={styles.title}>Unsere Unterkünfte</h1>
-
-//       <p className={styles.intro}>
-//         Ob gemütliches Ferienzimmer oder großzügige Ferienwohnung – bei uns
-//         finden Sie die passende Unterkunft für Ihren Aufenthalt in Horneburg.
-//       </p>
-
-//       {/* 🏡 Ferienzimmer */}
-//       <section className={styles.card}>
-//         <div className={styles.imageWrapper}>
-//           <img
-//             src="../ferienzimmer2.jpg"
-//             alt="Ferienzimmer"
-//             className={styles.image}
-//           />
-//         </div>
-
-//         <div className={styles.content}>
-//           <h2>Ferienzimmer</h2>
-//           <p>
-//             Unsere liebevoll eingerichteten Ferienzimmer bieten Ihnen alles, was
-//             Sie für einen angenehmen Aufenthalt benötigen. Perfekt für
-//             Kurzreisen, Geschäftsreisende oder Wochenendgäste.
-//           </p>
-
-//           <ul className={styles.list}>
-//             <li className={styles.featureItem}>
-//               <Check className={styles.icon} />
-//               Komfortables Bett
-//             </li>
-
-//             <li className={styles.featureItem}>
-//               <Check className={styles.icon} />
-//               Eigenes Badezimmer
-//             </li>
-
-//             <li className={styles.featureItem}>
-//               <Check className={styles.icon} />
-//               WLAN inklusive
-//             </li>
-
-//             <li className={styles.featureItem}>
-//               <Check className={styles.icon} />
-//               Ruhige Lage
-//             </li>
-
-//             <li className={styles.featureItem}>
-//               <Check className={styles.icon} />
-//               mind. xx m²
-//             </li>
-//           </ul>
-
-//           <Button href="/buchung" variant="primary">
-//             <span>Zimmer buchen</span>
-//           </Button>
-//         </div>
-//       </section>
-
-//       {/* 🏡 Ferienwohnung */}
-//       <section className={styles.cardReverse}>
-//         <div className={styles.imageWrapper}>
-//           <img
-//             src="../ferienwohnung.png"
-//             alt="Ferienwohnung"
-//             className={styles.image}
-//           />
-//         </div>
-
-//         <div className={styles.content}>
-//           <h2>Ferienwohnung</h2>
-//           <p>
-//             Unsere großzügige Ferienwohnung bietet Ihnen maximalen Komfort und
-//             viel Platz für einen längeren Aufenthalt – ideal für Familien oder
-//             kleine Gruppen.
-//           </p>
-
-//                     <ul className={styles.list}>
-//             <li className={styles.featureItem}>
-//               <Check className={styles.icon} />
-//               Voll ausgestattete Küche
-//             </li>
-
-//             <li className={styles.featureItem}>
-//               <Check className={styles.icon} />
-//               Separater Wohnbereich
-//             </li>
-
-//             <li className={styles.featureItem}>
-//               <Check className={styles.icon} />
-//               WLAN inklusive
-//             </li>
-
-//             <li className={styles.featureItem}>
-//               <Check className={styles.icon} />
-//               Mehrere Schlafmöglichkeiten
-//             </li>
-
-//             <li className={styles.featureItem}>
-//               <Check className={styles.icon} />
-//               Perfekt für längere Aufenthalte
-//             </li>
-//           </ul>
-
-//           <Button href="/buchung" variant="primary">
-//             <span>Zimmer buchen</span>
-//           </Button>
-//         </div>
-//       </section>
-//     </div>
-//   );
-// }
-
 import { Check } from "lucide-react";
 import styles from "./page.module.css";
 import Button from "../../components/Button/Button";
+import Hero from "../../components/Hero/Hero";
 
 export default function ZimmerPage() {
   return (
     <main>
-      {/* HERO MINI */}
-      <section className={styles.heroSmall}>
-        <h1>Unsere Unterkünfte</h1>
-        <p>
-          Ob gemütliches Zimmer oder großzügige Wohnung – finden Sie Ihren
-          perfekten Rückzugsort.
-        </p>
-      </section>
+
+    {/* HERO */}
+          <Hero
+            title="Unsere Zimmer"
+            subtitle="Finden Sie Ihren
+          perfekten Rückzugsort"
+            image="/pension-janina.jpg"
+            height="medium"
+            showScroll
+            scrollTarget="#ferienzimmer"
+          />
 
       {/* ================= FERIENZIMMER ================= */}
-      <section className={styles.section}>
+      <section id="ferienzimmer" className={styles.section}>
         <div className={styles.container}>
-          <h2>Ferienzimmer</h2>
+          <h2>Unsere Ferienzimmer</h2>
 
           {/* 🖼️ Galerie */}
           <div className={styles.gallery}>
-            <img src="/ferienzimmer1.jpg" />
-            <img src="/ferienzimmer2.jpg" />
-            <img src="/ferienzimmer3.png" />
+            <img src="/ferienzimmer1.jpg" alt="Ferienzimmer" />
+            <img src="/ferienzimmer2.jpg" alt="Ferienzimmer" />
+            <img src="/ferienzimmer3.png" alt="Ferienzimmer" />
           </div>
 
           {/* Text */}
@@ -152,18 +37,41 @@ export default function ZimmerPage() {
               was Sie für einen entspannten Aufenthalt benötigen.
             </p>
 
+            {/* PREISE */}
+            <div className={styles.priceWrapper}>
+              <div className={styles.priceCard}>
+                <strong>84€</strong>
+                <p>1 Person / Nacht</p>
+              </div>
+
+              <div className={styles.priceCard}>
+                <strong>95€</strong>
+                <p>2 Personen / Nacht</p>
+              </div>
+
+              <div className={styles.priceCard}>
+                <strong>125€</strong>
+                <p>3 Personen / Nacht</p>
+              </div>
+
+              <div className={styles.priceCard}>
+                <strong>155€</strong>
+                <p>4 Personen / Nacht</p>
+              </div>
+            </div>
+
             <ul className={styles.list}>
               <li>
-                <Check /> Komfortables Bett
+                <Check color="var(--color-primary)" /> Komfortables Bett
               </li>
               <li>
-                <Check /> Eigenes Badezimmer
+                <Check color="var(--color-primary)" /> Eigenes Badezimmer
               </li>
               <li>
-                <Check /> WLAN inklusive
+                <Check color="var(--color-primary)" /> WLAN inklusive
               </li>
               <li>
-                <Check /> Ruhige Lage
+                <Check color="var(--color-primary)" /> Ruhige Lage
               </li>
             </ul>
 
@@ -177,32 +85,50 @@ export default function ZimmerPage() {
       {/* ================= FERIENWOHNUNG ================= */}
       <section className={styles.sectionAlt}>
         <div className={styles.container}>
-          <h2>Ferienwohnung</h2>
+          <h2>Unsere Ferienwohnungen</h2>
 
           <div className={styles.gallery}>
-            <img src="/ferienwohnung1.png" />
-            <img src="/ferienwohnung2.png" />
-            <img src="/ferienwohnung3.png" />
+            <img src="/ferienwohnung1.png" alt="Ferienwohnung" />
+            <img src="/ferienwohnung2.png" alt="Ferienwohnung" />
+            <img src="/ferienwohnung3.png" alt="Ferienwohnung" />
           </div>
 
           <div className={styles.textBlock}>
             <p>
-              Unsere großzügige Ferienwohnung bietet maximalen Komfort und viel
+              Unsere großzügigen Ferienwohnungen bieten maximalen Komfort und viel
               Platz.
             </p>
 
+            {/* PREISE */}
+            <div className={styles.priceWrapper}>
+              <div className={styles.priceCard}>
+                <strong>120€</strong>
+                <p>1–2 Personen / Nacht</p>
+              </div>
+
+              <div className={styles.priceCard}>
+                <strong>150€</strong>
+                <p>3 Personen / Nacht</p>
+              </div>
+
+              <div className={styles.priceCard}>
+                <strong>180€</strong>
+                <p>4 Personen / Nacht</p>
+              </div>
+            </div>
+
             <ul className={styles.list}>
               <li>
-                <Check /> Voll ausgestattete Küche
+                <Check color="var(--color-primary)" /> Voll ausgestattete Küche
               </li>
               <li>
-                <Check /> Separater Wohnbereich
+                <Check color="var(--color-primary)"  /> Separater Wohnbereich
               </li>
               <li>
-                <Check /> WLAN inklusive
+                <Check color="var(--color-primary)" /> WLAN inklusive
               </li>
               <li>
-                <Check /> Ideal für Familien
+                <Check color="var(--color-primary)" /> Ideal für Familien
               </li>
             </ul>
 
