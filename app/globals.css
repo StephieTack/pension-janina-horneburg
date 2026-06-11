@@ -38,6 +38,10 @@ html {
   }
 }
 
+p {
+    margin-bottom: 1em; /* Erzeugt den Platz einer Leerzeile */
+}
+
 /* =========================
 HEADER
 ========================= */

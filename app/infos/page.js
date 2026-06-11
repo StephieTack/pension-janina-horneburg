@@ -17,82 +17,113 @@ export default function Infos() {
       title: "An- & Abreise",
       content: (
         <>
-          <p>Am Anreisetag steht dir dein Zimmer ab 15 Uhr zur Verfügung.</p>
           <p>
-            Am Abreisetag bitten wir dich, das Zimmer bis 11 Uhr freizugeben.
+            Der Check-in ist ab 15:00 Uhr möglich, der Check-out erfolgt bis
+            10:00 Uhr.{" "}
           </p>
           <p>
-            Unsere Rezeptionszeiten sind von 8 bis 18 Uhr. Eine spätere Anreise
-            ist jederzeit über unseren Self-Check-in möglich – bitte gib uns
-            dazu rechtzeitig Bescheid.
-          </p>
-        </>
-      ),
-    },
-    {
-      title: "Preise",
-      content: (
-        <>
-          <p>
-            <strong>Einzelzimmer:</strong> 63,00 € / Nacht
+            Unsere Rezeption ist telefonisch täglich von 08:00 bis 12:00 Uhr
+            sowie von 14:00 bis 18:00 Uhr für Sie erreichbar.{" "}
           </p>
           <p>
-            <strong>Doppelzimmer:</strong> 79,00 € / Nacht
+            Die Anreise beziehungsweise der Check-in erfolgt bequem per
+            Schlüsselsafe, sodass Sie flexibel anreisen können.
           </p>
-          <p>
-            <strong>Ferienwohnung:</strong> 97,00 € / Nacht
-          </p>
-          <p>Aufbettung ab der 3. Person: 20,00 €</p>
-          <p>Endreinigung Ferienwohnung: 20,00 €</p>
-          <p>Frühstück: 9,00 € pro Person</p>
-          <p>Zustellbett: 20,00 € pro Nacht</p>
-          <p>Hund: 8,00 € pro Nacht</p>
         </>
       ),
     },
     {
       title: "Frühstück",
       content: (
-        <p>
-          Frühstück ist am Wochenende für 9 € pro Person auf Anfrage möglich.
-          Bitte melde dich vorab bei uns.
-        </p>
+        <>
+          <p>
+            Von Freitag bis Sonntag servieren wir Ihnen zwischen 08:00 und 10:00
+            Uhr ein liebevoll angerichtetes Frühstück direkt am Tisch – ganz
+            ohne Buffet und in entspannter Atmosphäre.{" "}
+          </p>
+          <p>
+            Damit wir alles frisch für Sie vorbereiten können, bitten wir um
+            eine vorherige Reservierung.
+          </p>
+          <p>
+            Der Frühstückspreis beträgt 12,50 € pro Person. Freuen Sie sich auf
+            frische Brötchen mit einer Auswahl an süßem und herzhaftem
+            Aufschnitt, dazu frische Gurken, ein gekochtes Ei sowie frischen
+            Orangensaft. Kaffee wird bei uns selbstverständlich unbegrenzt
+            serviert. </p><p>Wer lieber Tee statt Kaffee genießt, kann sich gerne aus
+            einer feinen Auswahl verschiedener Teesorten bedienen. So starten
+            Sie entspannt und genussvoll in den Tag.
+          </p>
+        </>
       ),
     },
-    {
+        {
       title: "Inklusivleistungen",
       content: (
-        <ul>
-          <li>Kostenloses WLAN</li>
-          <li>Kostenloser Stellplatz</li>
-          <li>Kostenloser Fahrradstellplatz</li>
-        </ul>
+       <p>Während Ihres Aufenthalts steht Ihnen kostenfreies WLAN zur Verfügung. Je nach Verfügbarkeit bieten wir außerdem Stellplätze direkt an der Unterkunft an. Für Fahrräder gibt es eine sichere Unterstellmöglichkeit – ideal für Gäste, die die Umgebung aktiv erkunden möchten.</p>
       ),
     },
-    {
-      title: "Parken & Anfahrt",
-      content: (
-        <p>
-          Parkmöglichkeiten befinden sich direkt an der Pension. Die genaue
-          Wegbeschreibung erhältst du mit deiner Buchungsbestätigung.
-        </p>
-      ),
-    },
-    {
+        {
       title: "Haustiere",
       content: (
         <p>
-          Haustiere sind im gesamten Haus gegen einen Aufpreis von 8 € pro Nacht
-          erlaubt.
+          Vierbeinige Begleiter sind bei uns herzlich willkommen. Für Hunde berechnen wir einen Aufpreis von 12 € pro Nacht. Bitte sprechen Sie uns vor Ihrer Anreise gerne an, damit wir alles optimal vorbereiten können.
         </p>
       ),
     },
     {
-      title: "Anzahlung",
+      title: "Unsere Übernachtungspreise",
+      content: (
+        <>
+        <p>Wir bieten Ihnen komfortable Unterkünfte zu fairen Preisen:</p>
+          <p>
+            <strong>Doppelzimmer 1 Person:</strong> 84,00 € pro Nacht
+          </p>
+          <p>
+            <strong>Doppelzimmer 2 Personen:</strong> 95,00 € pro Nacht
+          </p>
+          <p>
+            <strong>Doppelzimmer 3 Personen:</strong> 125,00 € pro Nacht
+          </p>
+          <p>
+            <strong>Doppelzimmer 4 Personen:</strong> 155,00 € pro Nacht
+          </p>
+          <p>
+            <strong>Ferienwohnung 1 - 2 Personen:</strong> 120,00 € pro Nacht
+          </p>
+          <p>
+            <strong>Ferienwohnung 3 Personen:</strong> 150,00 € pro Nacht
+          </p>
+          <p>
+            <strong>Ferienwohnung 4 Personen:</strong> 180,00 € pro Nacht
+          </p>
+          <p>Endreinigung Ferienwohnung: 45,00 €</p>
+        </>
+      ),
+    },
+        {
+      title: "Zusatzleistungen",
+      content: (
+        <>
+        <p>Für einen noch angenehmeren Aufenthalt können Sie folgende Extras hinzu buchen:</p>
+          <p>
+            <strong>Frühstück:</strong> 12,50 € pro Person und Tag
+          </p>
+          <p>
+            <strong>Hund:</strong> 12,00 € pro Nacht
+          </p>
+          <p>
+            <strong>Aufbettung:</strong> 30,00 € einmalig. ??????????????????????????????
+          </p>
+          <p>Wir freuen uns darauf, Sie bald bei uns begrüßen zu dürfen!</p>
+        </>
+      ),
+    },
+    {
+      title: "Zahlung",
       content: (
         <p>
-          Für deine Buchung wird eine Anzahlung von 25 % innerhalb von 7 Tagen
-          nach Erhalt der Buchungsbestätigung fällig.
+          Eine Anzahlung ist bei uns nicht erforderlich. Die Bezahlung erfolgt bequem bei Erhalt der Rechnung vor Ort oder per Überweisung. 
         </p>
       ),
     },
@@ -100,11 +131,23 @@ export default function Infos() {
       title: "Stornobedingungen",
       content: (
         <>
-          <p>Kostenlose Stornierung bis 14 Tage vor Anreise.</p>
-          <p>Bei weniger als 14 Tagen: 80 % des Reisepreises.</p>
-          <p>Bei Nichtanreise: 100 % des Reisepreises.</p>
-          <p>Wir empfehlen eine Reiserücktrittsversicherung.</p>
-        </>
+      
+        <p>Ein Rücktritt des Gastes bedarf der Textform. Im Falle einer Stornierung gelten folgende Bedingungen:</p>
+        <ul>
+          <li>Bis 20 Tage vor Anreise: kostenfrei</li>
+          <li>19 bis 7 Tage vor Anreise: 80 % des vereinbarten Preises</li>
+          <li>ab 6 Tage vor Anreise oder bei Nichtanreise: 100 % des vereinbarten Preises</li>
+        </ul>
+          </>
+      ),
+    },
+        {
+      title: "Parken & Anfahrt",
+      content: (
+        <p>
+          Parkmöglichkeiten befinden sich direkt an der Pension. Die genaue
+          Wegbeschreibung erhältst du mit deiner Buchungsbestätigung.
+        </p>
       ),
     },
   ];

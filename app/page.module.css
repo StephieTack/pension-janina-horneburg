@@ -180,16 +180,24 @@
   /* box-shadow: 0 10px 30px rgba(0,0,0,0.05); */
 }
 
-/* LIST */
-.list {
-  margin-top: 20px;
-  list-style: none;
-  padding: 0;
+.icon {
+ color: var(--color-primary)
 }
 
 .list li {
-  margin-bottom: 10px;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    margin-bottom: 14px;
+  }
+
+  .list svg {
+    flex-shrink: 0;
+    opacity: 0.8;
+    stroke: var(--color-primary);
+  }
 
 /* IMAGE STRIP */
 .imageStrip {

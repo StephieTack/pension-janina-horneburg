@@ -8,6 +8,10 @@ import {
   MapPin,
   Sparkles,
   HouseIcon,
+  Train,
+  UtensilsCrossed,
+  Map,
+  ArrowRightLeft,
 } from "lucide-react";
 
 export default function Home() {
@@ -29,15 +33,15 @@ export default function Home() {
       {/* ================= WELCOME ================= */}
       <section id="welcome" className={styles.section}>
         <div className={styles.container}>
-          <h2>Willkommen in der Pension Janina</h2>
+          <h2>
+            Willkommen in der Pension Janina – Ihrem Zuhause auf Zeit in Horneburg
+          </h2>
           <p>
-            Ich bin Janina Ruprecht und führe die Pension in zweiter Generation
-            – mit viel Herz und dem Anspruch, Ihnen einen entspannten und
-            angenehmen Aufenthalt zu bieten.
-          </p>
-          <p>
-            Freuen Sie sich auf moderne, liebevoll eingerichtete Zimmer und
-            Ferienwohnungen – zentral gelegen im schönen Horneburg.
+            Schön, dass Sie den Weg zu uns gefunden haben! Ich bin Janina
+            Ruprecht – und die Pension Janina ist kein anonymes Hotel, sondern
+            ein Stück Familie. Bereits in zweiter Generation führe ich unser
+            Haus mit ganzem Herzen, und genau das spüren Sie vom ersten Moment
+            an.
           </p>
         </div>
       </section>
@@ -46,7 +50,11 @@ export default function Home() {
       <section className={styles.sectionAlt}>
         <div className={styles.container}>
           <h2>Unsere Unterkunft</h2>
-
+          <p>
+            Freuen Sie sich auf moderne, liebevoll eingerichtete Zimmer und
+            gemütliche Ferienwohnungen, mitten im charmanten Horneburg. Erholen
+            Sie sich, kommen Sie zur Ruhe – wir freuen uns auf Sie!
+          </p>
           <div className={styles.featuresGrid}>
             <div className={styles.featureItem}>
               <Bed className={styles.icon} />
@@ -84,17 +92,32 @@ export default function Home() {
       {/* ================= LOCATION ================= */}
       <section className={styles.section}>
         <div className={styles.container}>
-          <h2>Perfekte Lage</h2>
+          <h2>Perfekte Lage – mitten im Herzen von Horneburg</h2>
           <p>
-            Die Pension liegt im Ortskern von Horneburg – ruhig und dennoch
-            zentral.
+            Die Pension Janina liegt genau richtig: ruhig genug zum Entspannen,
+            zentral genug für alles was Sie brauchen. Ob Sie geschäftlich
+            unterwegs sind oder die wunderschöne Region rund um die Niederelbe
+            erkunden möchten – bei uns sind Sie bestens aufgehoben.
           </p>
 
           <ul className={styles.list}>
-            <li>Bahnhof fußläufig erreichbar</li>
-            <li>Restaurants und Cafés in direkter Nähe</li>
-            <li>Zwischen Buxtehude und Stade</li>
-            <li>Idealer Ausgangspunkt für Ausflüge ins Alte Land</li>
+            <li>
+              <Train size={30} />
+              Bahnhof bequem zu Fuß erreichbar
+            </li>
+            <li>
+              <UtensilsCrossed size={30} />
+              Restaurants und Cafés direkt vor der Tür
+            </li>
+            <li>
+              <Map size={30} />
+              Zentral zwischen Buxtehude (~9 km) und Stade (~13 km) gelegen
+            </li>
+            <li>
+              <ArrowRightLeft size={30} />
+              Hamburg schnell erreichbar – nur ca. 35 km entfernt, bequem per
+              S-Bahn direkt vom Bahnhof Horneburg
+            </li>
           </ul>
         </div>
       </section>
