@@ -19,7 +19,7 @@ export default function Home() {
     <main>
       {/* ================= HERO ================= */}
       <Hero
-        image="/ferienzimmer4.jpg"
+        image="/zimmer3.jpeg"
         logo="/logo_hell.png"
         subtitle="Ankommen. Durchatmen. Wohlfühlen."
         showScroll

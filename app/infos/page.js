@@ -43,7 +43,7 @@ export default function Infos() {
           </p>
           <p>
             Damit wir alles frisch für Sie vorbereiten können, bitten wir um
-            eine vorherige Reservierung.
+            eine vorherige Reservierung. Teilen Sie Ihren Wunsch bitte vorab mit.
           </p>
           <p>
             Der Frühstückspreis beträgt 12,50 € pro Person. Freuen Sie sich auf
@@ -72,7 +72,7 @@ export default function Infos() {
       ),
     },
     {
-      title: "Unsere Übernachtungspreise",
+      title: "Übernachtungspreise",
       content: (
         <>
         <p>Wir bieten Ihnen komfortable Unterkünfte zu fairen Preisen:</p>
@@ -107,13 +107,10 @@ export default function Infos() {
         <>
         <p>Für einen noch angenehmeren Aufenthalt können Sie folgende Extras hinzu buchen:</p>
           <p>
-            <strong>Frühstück:</strong> 12,50 € pro Person und Tag
+            <strong>Frühstück:</strong> 12,50 € pro Person und Tag <p>(nach vorheriger Reservierung)</p>
           </p>
           <p>
-            <strong>Hund:</strong> 12,00 € pro Nacht
-          </p>
-          <p>
-            <strong>Aufbettung:</strong> 30,00 € einmalig. ??????????????????????????????
+            <strong>Hund:</strong> 12,00 € pro Nacht <p>(bequem über die Onlinebuchung auswählbar)</p>
           </p>
           <p>Wir freuen uns darauf, Sie bald bei uns begrüßen zu dürfen!</p>
         </>
@@ -155,7 +152,7 @@ export default function Infos() {
   return (
     <main>
       <Hero
-        title="Wissenswertes von A bis Z"
+        title="Wissenswertes"
         subtitle="Alle wichtigen Infos für deinen Aufenthalt"
         image="/gaestebuch.jpg"
         height="medium"

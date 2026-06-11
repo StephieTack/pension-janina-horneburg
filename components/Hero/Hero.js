@@ -10,10 +10,13 @@ export default function Hero({
   scrollTarget = "#next",
   logo,
   children,
+  className = "",
 }) {
   return (
     <section
-      className={`${styles.hero} ${height === "medium" ? styles.medium : ""}`}
+      className={`${styles.hero} ${
+        height === "medium" ? styles.medium : ""
+      }`}
       style={{ backgroundImage: `url(${image})` }}
     >
       {/* CONTENT */}
@@ -24,7 +27,7 @@ export default function Hero({
           <h1>{title}</h1>
         )}
 
-        {subtitle && <p>{subtitle}</p>}
+        {subtitle && <p className={styles.subtitle}>{subtitle}</p>}
 
         {children}
       </div>

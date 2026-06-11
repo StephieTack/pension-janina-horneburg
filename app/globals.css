@@ -166,8 +166,8 @@ MOBILE MENU
 ========================= */
 .mobileMenu {
   position: fixed;
-  top: -22;
-  left: -2; /* 🔥 statt right */
+  top: -22px;
+  left: -2px; /* 🔥 statt right */
   width: 100%; /* 🔥 full width */
   height: 100vh;
 
@@ -176,8 +176,10 @@ MOBILE MENU
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  padding-top: 180px;
+  align-items: flex-end;
+  padding-right: 50px;
   gap: 32px;
 
   transform: translateY(-100%); /* 🔥 von oben rein */

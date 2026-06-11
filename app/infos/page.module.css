@@ -84,7 +84,7 @@
 
 /* geöffnet */
 .active .accordionContent {
-  max-height: 500px; /* reicht für deinen Content */
+  max-height: 800px; 
 }
 
 /* INNER CONTENT */

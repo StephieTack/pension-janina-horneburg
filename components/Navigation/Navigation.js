@@ -29,10 +29,6 @@ export default function Navigation() {
             Umgebung
           </Link>
 
-          <Link href="/buchungsanfrage" className="navLink">
-            Buchungsanfrage
-          </Link>
-
           <Link href="/kontakt" className="navLink">
             Kontakt
           </Link>
@@ -71,18 +67,12 @@ export default function Navigation() {
           Umgebung
         </Link>
 
-        <Link href="/buchungsanfrage" onClick={() => setOpen(false)}>
-          Buchungsanfrage
-        </Link>
-
         <Link href="/kontakt" onClick={() => setOpen(false)}>
           Kontakt
         </Link>
 
         <Link
-          href="/buchung"
-          className="navButton"
-          onClick={() => setOpen(false)}
+          href="/buchung" onClick={() => setOpen(false)}
         >
           Buchung
         </Link>

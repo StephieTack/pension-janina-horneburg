@@ -1,34 +1,63 @@
+/* =========================
+   ANIMATION
+========================= */
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0) rotate(45deg);
+  }
+
+  50% {
+    transform: translateY(10px) rotate(45deg);
+  }
+}
+
+/* =========================
+   HERO
+========================= */
+
 .hero {
   position: relative;
-  height: 100vh;
+
+  min-height: 100vh;
+  min-height: 100svh;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
+  overflow: hidden;
+
   text-align: center;
+
   color: var(--color-bright);
 
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
-/* Variante */
-.medium {
-  height: 80vh;
-}
-
-/* Overlay */
-.hero::after {
+/* 🔥 Premium Overlay */
+.hero::before {
   content: "";
+
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.3);
 
-  pointer-events: none; /* 👈 HINZUFÜGEN */
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.22),
+    rgba(0, 0, 0, 0.4)
+  );
+
+  z-index: 1;
 }
 
-/* Content */
+/* =========================
+   CONTENT
+========================= */
+
 .content {
   position: relative;
   z-index: 2;
@@ -36,58 +65,162 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  max-width: 900px;
+
+  padding-inline: 24px;
 }
 
-/* 🔥 LOGO wie vorher */
+/* =========================
+   LOGO
+========================= */
+
 .logo {
   width: 700px;
   max-width: 80%;
-  margin-bottom: 20px;
+
+  margin-bottom: 24px;
+
+  filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.18));
 }
 
-/* TEXT */
+/* =========================
+   TITLE
+========================= */
+
 .content h1 {
-  font-family: dancing-script, cursive;
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: clamp(3.5rem, 7vw, 6.5rem);
+
+  line-height: 0.95;
+
+  font-weight: 500;
+
+  letter-spacing: -0.04em;
+
+  margin-bottom: 24px;
+
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
 }
+
+/* =========================
+   SUBTITLE
+========================= */
 
 .content p {
-  font-size: 1.2rem;
-  opacity: 0.9;
-  text-transform: uppercase;
-  letter-spacing: 3px;
+  max-width: 720px;
+
+  font-size: 1.3rem;
+  font-weight: 300;
+
+  line-height: 1.8;
+
+  letter-spacing: 0.02em;
+
+  opacity: 0.92;
+
+  margin-bottom: 40px;
+
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.28);
 }
 
-.content > *:not(:first-child) {
-  margin-top: 20px;
-}
+/* =========================
+   SCROLL INDICATOR
+========================= */
 
-/* SCROLL INDICATOR */
 .scrollIndicator {
   position: absolute;
-  bottom: 40px;
+
+  bottom: 42px;
   left: 50%;
+
   transform: translateX(-50%);
+
+  z-index: 2;
+
+  opacity: 0.8;
+
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
 }
 
 .scrollIndicator span {
   display: block;
+
   width: 24px;
   height: 24px;
 
   border-bottom: 2px solid var(--color-bright);
   border-right: 2px solid var(--color-bright);
 
+  transform: rotate(45deg);
+
   animation: bounce 1.8s infinite ease-in-out;
 }
 
-@keyframes bounce {
-  0%,
-  100% {
-    transform: translateY(0) rotate(45deg);
+/* 👉 Hover nur Desktop */
+@media (hover: hover) and (pointer: fine) {
+  .scrollIndicator:hover {
+    opacity: 1;
+
+    transform: translateX(-50%) translateY(2px);
   }
-  50% {
-    transform: translateY(10px) rotate(45deg);
+}
+
+/* =========================
+   MEDIUM HERO
+========================= */
+
+.medium {
+  min-height: 70vh;
+  min-height: 70svh;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .hero {
+    background-position: 22% center;
+  }
+
+  .content {
+    padding-inline: 20px;
+  }
+
+  .logo {
+    max-width: 92%;
+    transform: translateY(-170px);
+  }
+
+  .content h1 {
+    font-size: 3.2rem;
+
+    line-height: 1;
+  }
+
+  .content p {
+    font-size: 1.05rem;
+
+    line-height: 1.7;
+
+    margin-bottom: 32px;
+  }
+
+  .scrollIndicator {
+    bottom: 28px;
+  }
+
+  .scrollIndicator span {
+    width: 20px;
+    height: 20px;
+  }
+
+  .medium {
+    min-height: 60vh;
+    min-height: 60svh;
   }
 }
