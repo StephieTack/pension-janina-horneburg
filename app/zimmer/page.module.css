@@ -124,6 +124,12 @@
 }
 
 @media (max-width: 768px) {
+.section,
+.sectionAlt,
+.ctaSection {
+  padding: 40px 20px;
+}
+
   .gallery {
     grid-template-columns: 1fr;
   }

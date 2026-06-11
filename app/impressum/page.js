@@ -25,6 +25,16 @@ export default function ImpressumPage() {
         Vertretungsberechtigt: Janina Ruprecht
       </p>
 
+      <h2>Webdesign & technische Umsetzung</h2>
+
+      <p>Stephanie Tack</p>
+
+      <h2>Fotografien der Pension</h2>
+
+      <p>
+        Moritz Tebbe
+      </p>
+
       <h2>Haftung für Inhalte</h2>
       <p>
         Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die

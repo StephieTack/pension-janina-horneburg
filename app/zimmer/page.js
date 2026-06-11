@@ -25,8 +25,8 @@ export default function ZimmerPage() {
 
           {/* 🖼️ Galerie */}
           <div className={styles.gallery}>
-            <img src="/ferienzimmer1.jpg" alt="Ferienzimmer" />
-            <img src="/ferienzimmer2.jpg" alt="Ferienzimmer" />
+            <img src="/zimmer1.png" alt="Ferienzimmer" />
+            <img src="/zimmer7.jpg" alt="Ferienzimmer" />
             <img src="/ferienzimmer3.png" alt="Ferienzimmer" />
           </div>
 

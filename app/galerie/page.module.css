@@ -1,0 +1,283 @@
+/* =========================
+   GLOBAL
+========================= */
+
+.intro,
+.gallerySection,
+.featureSection,
+.editorialSection {
+  padding: 80px 24px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.containerSmall {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* =========================
+   TYPO
+========================= */
+
+.eyebrow {
+  display: inline-block;
+
+  margin-bottom: 18px;
+
+  font-size: 0.75rem;
+  font-weight: 600;
+
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  color: var(--color-primary);
+}
+
+.intro h2,
+.editorialContent h2,
+.overlay h2 {
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+
+  line-height: 1.05;
+
+  font-weight: 500;
+
+  margin-bottom: 24px;
+
+  letter-spacing: -0.03em;
+}
+
+.intro p,
+.editorialContent p,
+.overlay p {
+  font-size: 1.08rem;
+  line-height: 1.9;
+
+  color: rgba(0, 0, 0, 0.72);
+}
+
+/* =========================
+   INTRO
+========================= */
+
+.intro {
+  background: var(--color-bg-highlight-bright);
+}
+
+/* =========================
+   GALLERY GRID
+========================= */
+
+.galleryGrid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 18px;
+}
+
+.galleryGrid img {
+  width: 100%;
+  height: 520px;
+
+  object-fit: cover;
+
+  border-radius: 30px;
+
+  transition:
+    transform 0.45s ease,
+    box-shadow 0.45s ease;
+}
+
+.galleryGrid img:hover {
+  transform: scale(1.015);
+
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================
+   FEATURE IMAGE
+========================= */
+
+.featureSection {
+  background: var(--color-bg-highlight-bright);
+}
+
+.featureWrapper {
+  position: relative;
+
+  max-width: 1400px;
+  margin: 0 auto;
+
+  overflow: hidden;
+
+  border-radius: 36px;
+
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.18);
+}
+
+.featureImage {
+  width: 100%;
+  height: 760px;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  padding: 60px;
+
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.72),
+    rgba(0, 0, 0, 0.2),
+    transparent
+  );
+
+  color: white;
+}
+
+.overlay span {
+  margin-bottom: 16px;
+
+  font-size: 0.85rem;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  opacity: 0.8;
+}
+
+.overlay p {
+  max-width: 560px;
+
+  color: rgba(255, 255, 255, 0.88);
+}
+
+/* =========================
+   EDITORIAL
+========================= */
+
+.editorialGrid {
+  display: grid;
+
+  grid-template-columns: 0.9fr 1.1fr;
+
+  gap: 80px;
+
+  align-items: center;
+}
+
+.editorialContent span {
+  display: inline-block;
+
+  margin-bottom: 18px;
+
+  font-size: 0.85rem;
+
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: var(--color-primary);
+}
+
+.editorialGallery {
+  display: grid;
+
+  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-rows: 260px 260px;
+
+  gap: 18px;
+}
+
+.editorialGallery img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  border-radius: 28px;
+
+  transition:
+    transform 0.45s ease,
+    box-shadow 0.45s ease;
+}
+
+.editorialGallery img:first-child {
+  grid-row: span 2;
+}
+
+.editorialGallery img:hover {
+  transform: scale(1.015);
+
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 1024px) {
+  .editorialGrid {
+    grid-template-columns: 1fr;
+
+    gap: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro,
+  .gallerySection,
+  .featureSection,
+  .editorialSection {
+    padding: 40px 20px;
+  }
+
+  .galleryGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .galleryGrid img {
+    height: 260px;
+  }
+
+  .featureWrapper {
+    border-radius: 24px;
+  }
+
+  .featureImage {
+    height: 520px;
+  }
+
+  .overlay {
+    padding: 32px;
+  }
+
+  .editorialGallery {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .editorialGallery img:first-child {
+    grid-row: auto;
+  }
+
+  .editorialGallery img {
+    height: 240px;
+  }
+}

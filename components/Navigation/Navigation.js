@@ -21,6 +21,10 @@ export default function Navigation() {
             Zimmer & Preise
           </Link>
 
+          <Link href="/galerie" className="navLink">
+            Bildergalerie
+          </Link>
+
           <Link href="/infos" className="navLink">
             Wissenswertes
           </Link>
@@ -59,6 +63,10 @@ export default function Navigation() {
           Zimmer & Preise
         </Link>
 
+        <Link href="/galerie" onClick={() => setOpen(false)}>
+          Bildergalerie
+        </Link>
+
         <Link href="/infos" onClick={() => setOpen(false)}>
           Wissenswertes
         </Link>
@@ -71,9 +79,7 @@ export default function Navigation() {
           Kontakt
         </Link>
 
-        <Link
-          href="/buchung" onClick={() => setOpen(false)}
-        >
+        <Link href="/buchung" onClick={() => setOpen(false)}>
           Buchung
         </Link>
       </div>

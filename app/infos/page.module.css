@@ -84,7 +84,7 @@
 
 /* geöffnet */
 .active .accordionContent {
-  max-height: 800px; 
+  max-height: 800px;
 }
 
 /* INNER CONTENT */
@@ -103,4 +103,10 @@
 
 .accordionInner li {
   margin-bottom: 6px;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 40px 20px;
+  }
 }
