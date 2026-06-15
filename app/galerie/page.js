@@ -1,3 +1,4 @@
+import Button from "../../components/Button/Button";
 import Hero from "../../components/Hero/Hero";
 import styles from "./page.module.css";
 
@@ -43,7 +44,7 @@ export default function PensionPage() {
       <section className={styles.featureSection}>
         <div className={styles.featureWrapper}>
           <img
-            src="/zimmer6.jpg"
+            src="/ferienzimmer6.jpg"
             alt="Gemütliches Zimmer"
             className={styles.featureImage}
           />
@@ -91,6 +92,18 @@ export default function PensionPage() {
               <img src="/fruehstueck3.jpg" alt="Frühstückstisch" />
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* ================= CTA ================= */}
+      <section className={styles.ctaSection}>
+        <div className={styles.container}>
+          <h2>Jetzt Aufenthalt anfragen</h2>
+          <p>Wir freuen uns darauf, Sie bei uns begrüßen zu dürfen.</p>
+
+          <Button href="/buchung" variant="secondary">
+            <span>Zur Onlinebuchung</span>
+          </Button>
         </div>
       </section>
     </main>

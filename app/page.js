@@ -19,7 +19,7 @@ export default function Home() {
     <main>
       {/* ================= HERO ================= */}
       <Hero
-        image="/zimmer3.jpeg"
+        image="/ferienzimmer3.jpeg"
         logo="/logo_hell.png"
         subtitle="Ankommen. Durchatmen. Wohlfühlen."
         showScroll
@@ -34,7 +34,8 @@ export default function Home() {
       <section id="welcome" className={styles.section}>
         <div className={styles.container}>
           <h2>
-            Willkommen in der Pension Janina – Ihrem Zuhause auf Zeit in Horneburg
+            Willkommen in der Pension Janina – Ihrem Zuhause auf Zeit in
+            Horneburg
           </h2>
           <p>
             Schön, dass Sie den Weg zu uns gefunden haben! Ich bin Janina
@@ -43,6 +44,9 @@ export default function Home() {
             Haus mit ganzem Herzen, und genau das spüren Sie vom ersten Moment
             an.
           </p>
+          <Button href="/galerie" variant="primary">
+            <span>Zur Bildergalierie</span>
+          </Button>
         </div>
       </section>
 
@@ -86,6 +90,9 @@ export default function Home() {
               <span>Modern & gepflegt</span>
             </div>
           </div>
+          <Button href="/zimmer" variant="primary">
+            <span>Zimmer ansehen</span>
+          </Button>
         </div>
       </section>
 

@@ -40,7 +40,8 @@
 
 .intro h2,
 .editorialContent h2,
-.overlay h2 {
+.overlay h2,
+.ctaSection h2 {
   font-family: "Cormorant Garamond", serif;
 
   font-size: clamp(2.5rem, 5vw, 4.5rem);
@@ -229,6 +230,27 @@
 }
 
 /* =========================
+    CTA SECTION
+========================= */
+
+.ctaSection {
+  padding: 100px 24px;
+
+  text-align: center;
+
+  background: var(--color-bg-highlight-dark);
+
+  color: var(--color-bright);
+}
+
+.ctaSection .secondaryButton {
+  margin-top: 20px;
+
+  display: inline-block;
+}
+
+
+/* =========================
    MOBILE
 ========================= */
 
@@ -244,7 +266,8 @@
   .intro,
   .gallerySection,
   .featureSection,
-  .editorialSection {
+  .editorialSection
+  .ctaSection {
     padding: 40px 20px;
   }
 

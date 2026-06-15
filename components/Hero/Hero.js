@@ -10,7 +10,6 @@ export default function Hero({
   scrollTarget = "#next",
   logo,
   children,
-  className = "",
 }) {
   return (
     <section

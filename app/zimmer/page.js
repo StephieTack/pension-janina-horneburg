@@ -2,33 +2,48 @@ import { Check } from "lucide-react";
 import styles from "./page.module.css";
 import Button from "../../components/Button/Button";
 import Hero from "../../components/Hero/Hero";
+import ImageSlider from "../../components/ImageSlider/ImageSlider";
 
 export default function ZimmerPage() {
   return (
     <main>
-
-    {/* HERO */}
-          <Hero
-            title="Unsere Zimmer"
-            subtitle="Finden Sie Ihren
+      {/* HERO */}
+      <Hero
+        title="Unsere Zimmer"
+        subtitle="Finden Sie Ihren
           perfekten Rückzugsort"
-            image="/pension-janina.jpg"
-            height="medium"
-            showScroll
-            scrollTarget="#ferienzimmer"
-          />
+        image="/pension-janina.jpg"
+        height="medium"
+        showScroll
+        scrollTarget="#ferienzimmer"
+      />
 
       {/* ================= FERIENZIMMER ================= */}
       <section id="ferienzimmer" className={styles.section}>
         <div className={styles.container}>
           <h2>Unsere Ferienzimmer</h2>
 
-          {/* 🖼️ Galerie */}
-          <div className={styles.gallery}>
-            <img src="/zimmer1.png" alt="Ferienzimmer" />
-            <img src="/zimmer7.jpg" alt="Ferienzimmer" />
-            <img src="/ferienzimmer3.png" alt="Ferienzimmer" />
-          </div>
+          {/* 🖼️ Image Slider */}
+          <ImageSlider
+            images={[
+              { src: "/ferienzimmer1.png", alt: "Ferienzimmer" },
+              { src: "/ferienzimmer2.jpeg", alt: "Ferienzimmer" },
+              { src: "/ferienzimmer3.jpeg", alt: "Ferienzimmer" },
+              { src: "/ferienzimmer4.jpg", alt: "Ferienzimmer" },
+              { src: "/ferienzimmer5.jpg", alt: "Ferienzimmer" },
+              { src: "/ferienzimmer6.jpg", alt: "Ferienzimmer" },
+              { src: "/ferienzimmer9.jpg", alt: "Ferienzimmer" },
+              { src: "/ferienzimmer10.jpg", alt: "Ferienzimmer" },
+              { src: "/ferienzimmer11.jpg", alt: "Ferienzimmer" },
+              { src: "/ferienzimmer12.jpg", alt: "Ferienzimmer" },
+              { src: "/ferienzimmer13.jpg", alt: "Ferienzimmer" },
+              { src: "/ferienzimmer14.jpg", alt: "Ferienzimmer" },
+              { src: "/ferienzimmer15.jpg", alt: "Ferienzimmer" },
+              { src: "/ferienzimmer16.jpg", alt: "Ferienzimmer" },
+              { src: "/ferienzimmer17.jpg", alt: "Ferienzimmer" },
+              { src: "/ferienzimmer18.jpg", alt: "Ferienzimmer" },
+            ]}
+          />
 
           {/* Text */}
           <div className={styles.textBlock}>
@@ -87,16 +102,25 @@ export default function ZimmerPage() {
         <div className={styles.container}>
           <h2>Unsere Ferienwohnungen</h2>
 
-          <div className={styles.gallery}>
-            <img src="/ferienwohnung1.png" alt="Ferienwohnung" />
-            <img src="/ferienwohnung2.png" alt="Ferienwohnung" />
-            <img src="/ferienwohnung3.png" alt="Ferienwohnung" />
-          </div>
+          {/* 🖼️ Image Slider */}
+          <ImageSlider
+            images={[
+              { src: "/ferienwohnung1.jpg", alt: "Ferienzimmer" },
+              { src: "/ferienwohnung2.jpg", alt: "Ferienzimmer" },
+              { src: "/ferienwohnung3.jpg", alt: "Ferienzimmer" },
+              { src: "/ferienwohnung4.jpg", alt: "Ferienzimmer" },
+              { src: "/ferienwohnung5.jpg", alt: "Ferienzimmer" },
+              { src: "/ferienwohnung6.jpg", alt: "Ferienzimmer" },
+              { src: "/ferienwohnung7.jpg", alt: "Ferienzimmer" },
+              { src: "/ferienwohnung8.jpg", alt: "Ferienzimmer" },
+              { src: "/ferienwohnung9.jpg", alt: "Ferienzimmer" },
+            ]}
+          />
 
           <div className={styles.textBlock}>
             <p>
-              Unsere großzügigen Ferienwohnungen bieten maximalen Komfort und viel
-              Platz.
+              Unsere großzügigen Ferienwohnungen bieten maximalen Komfort und
+              viel Platz.
             </p>
 
             {/* PREISE */}
@@ -122,7 +146,7 @@ export default function ZimmerPage() {
                 <Check color="var(--color-primary)" /> Voll ausgestattete Küche
               </li>
               <li>
-                <Check color="var(--color-primary)"  /> Separater Wohnbereich
+                <Check color="var(--color-primary)" /> Separater Wohnbereich
               </li>
               <li>
                 <Check color="var(--color-primary)" /> WLAN inklusive
