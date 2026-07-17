@@ -1,10 +1,15 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import styles from "./BookingWidget.module.css";
 
 export default function BookingWidget() {
+  const initialized = useRef(false);
+
   useEffect(() => {
+    if (initialized.current) return;
+    initialized.current = true;
+
     const script = document.createElement("script");
 
     script.src =
@@ -13,31 +18,30 @@ export default function BookingWidget() {
     script.async = true;
 
     script.onload = () => {
-      function ebFrontendLoadedCheck() {
-        if (typeof window.jQuery !== "undefined") {
-          if (window.jQuery.fn.ebFrontEnd) {
-            window.jQuery("#ebFrontEndFrame").ebFrontEnd({
-              customerId: 11842,
-              serialNo: "5482-6486-5985",
-              localeId: 2,
-              frameId: "ebFrontEndPlugin",
-              scrollOffset: 0,
-              adultOnly: false,
-              gtmDL: "dataLayer",
-              hideFilters: "on",
-              disableScroll: true,
-              source: "",
-              collapsedExtras: false,
-            });
-          } else {
-            setTimeout(ebFrontendLoadedCheck, 200);
-          }
+      const check = () => {
+        if (
+          window.jQuery &&
+          window.jQuery.fn.ebFrontEnd
+        ) {
+          window.jQuery("#ebFrontEndFrame").ebFrontEnd({
+            customerId: 11842,
+            serialNo: "5482-6486-5985",
+            localeId: 2,
+            frameId: "ebFrontEndPlugin",
+            scrollOffset: 0,
+            adultOnly: false,
+            gtmDL: "dataLayer",
+            hideFilters: "on",
+            disableScroll: true,
+            source: "",
+            collapsedExtras: false,
+          });
         } else {
-          setTimeout(ebFrontendLoadedCheck, 200);
+          setTimeout(check, 200);
         }
-      }
+      };
 
-      ebFrontendLoadedCheck();
+      check();
     };
 
     document.body.appendChild(script);
@@ -49,7 +53,7 @@ export default function BookingWidget() {
 
   return (
     <section className={styles.wrapper}>
-      <div id="ebFrontEndFrame"></div>
+      <div id="ebFrontEndFrame" suppressHydrationWarning />
     </section>
   );
 }

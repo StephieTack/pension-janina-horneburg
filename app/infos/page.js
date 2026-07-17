@@ -43,31 +43,44 @@ export default function Infos() {
           </p>
           <p>
             Damit wir alles frisch für Sie vorbereiten können, bitten wir um
-            eine vorherige Reservierung. Teilen Sie Ihren Wunsch bitte vorab mit.
+            eine vorherige Reservierung. Teilen Sie Ihren Wunsch bitte vorab
+            mit.
           </p>
           <p>
             Der Frühstückspreis beträgt 12,50 € pro Person. Freuen Sie sich auf
             frische Brötchen mit einer Auswahl an süßem und herzhaftem
             Aufschnitt, dazu frische Gurken, ein gekochtes Ei sowie frischen
             Orangensaft. Kaffee wird bei uns selbstverständlich unbegrenzt
-            serviert. </p><p>Wer lieber Tee statt Kaffee genießt, kann sich gerne aus
-            einer feinen Auswahl verschiedener Teesorten bedienen. So starten
-            Sie entspannt und genussvoll in den Tag.
+            serviert.{" "}
+          </p>
+          <p>
+            Wer lieber Tee statt Kaffee genießt, kann sich gerne aus einer
+            feinen Auswahl verschiedener Teesorten bedienen. So starten Sie
+            entspannt und genussvoll in den Tag.
           </p>
         </>
       ),
     },
-        {
+    {
       title: "Inklusivleistungen",
       content: (
-       <p>Während Ihres Aufenthalts steht Ihnen kostenfreies WLAN zur Verfügung. Je nach Verfügbarkeit bieten wir außerdem Stellplätze direkt an der Unterkunft an. Für Fahrräder gibt es eine sichere Unterstellmöglichkeit – ideal für Gäste, die die Umgebung aktiv erkunden möchten.</p>
+        <p>
+          Während Ihres Aufenthalts steht Ihnen kostenfreies WLAN zur Verfügung.
+          Je nach Verfügbarkeit bieten wir außerdem Stellplätze direkt an der
+          Unterkunft an. Für Fahrräder gibt es eine sichere
+          Unterstellmöglichkeit – ideal für Gäste, die die Umgebung aktiv
+          erkunden möchten.
+        </p>
       ),
     },
-        {
+    {
       title: "Haustiere",
       content: (
         <p>
-          Vierbeinige Begleiter sind bei uns herzlich willkommen. Für Hunde berechnen wir einen Aufpreis von 12 € pro Nacht. Bitte sprechen Sie uns vor Ihrer Anreise gerne an, damit wir alles optimal vorbereiten können.
+          Vierbeinige Begleiter sind bei uns herzlich willkommen. Für Hunde
+          berechnen wir einen Aufpreis von 12 € pro Nacht. Bitte sprechen Sie
+          uns vor Ihrer Anreise gerne an, damit wir alles optimal vorbereiten
+          können.
         </p>
       ),
     },
@@ -75,12 +88,12 @@ export default function Infos() {
       title: "Übernachtungspreise",
       content: (
         <>
-        <p>Wir bieten Ihnen komfortable Unterkünfte zu fairen Preisen:</p>
+          <p>Wir bieten Ihnen komfortable Unterkünfte zu fairen Preisen:</p>
           <p>
-            <strong>Doppelzimmer 1 Person:</strong> 84,00 € pro Nacht
+            <strong>Doppelzimmer 1 Person:</strong> 74,00 € pro Nacht
           </p>
           <p>
-            <strong>Doppelzimmer 2 Personen:</strong> 95,00 € pro Nacht
+            <strong>Doppelzimmer 2 Personen:</strong> 99,00 € pro Nacht
           </p>
           <p>
             <strong>Doppelzimmer 3 Personen:</strong> 125,00 € pro Nacht
@@ -97,20 +110,28 @@ export default function Infos() {
           <p>
             <strong>Ferienwohnung 4 Personen:</strong> 180,00 € pro Nacht
           </p>
+          <p>
+            <strong>Kinder unter 3 Jahren:</strong> kostenfrei
+          </p>
           <p>Endreinigung Ferienwohnung: 45,00 €</p>
         </>
       ),
     },
-        {
+    {
       title: "Zusatzleistungen",
       content: (
         <>
-        <p>Für einen noch angenehmeren Aufenthalt können Sie folgende Extras hinzu buchen:</p>
           <p>
-            <strong>Frühstück:</strong> 12,50 € pro Person und Tag <p>(nach vorheriger Reservierung)</p>
+            Für einen noch angenehmeren Aufenthalt können Sie folgende Extras
+            hinzu buchen:
           </p>
           <p>
-            <strong>Hund:</strong> 12,00 € pro Nacht <p>(bequem über die Onlinebuchung auswählbar)</p>
+            <strong>Frühstück:</strong> 12,50 € pro Person und Tag{" "}
+            <p>(nach vorheriger Reservierung)</p>
+          </p>
+          <p>
+            <strong>Hund:</strong> 12,00 € pro Nacht{" "}
+            <p>(bequem über die Onlinebuchung auswählbar)</p>
           </p>
           <p>Wir freuen uns darauf, Sie bald bei uns begrüßen zu dürfen!</p>
         </>
@@ -120,7 +141,8 @@ export default function Infos() {
       title: "Zahlung",
       content: (
         <p>
-          Eine Anzahlung ist bei uns nicht erforderlich. Die Bezahlung erfolgt bequem bei Erhalt der Rechnung vor Ort oder per Überweisung. 
+          Eine Anzahlung ist bei uns nicht erforderlich. Die Bezahlung erfolgt
+          bequem bei Erhalt der Rechnung vor Ort oder per Überweisung.
         </p>
       ),
     },
@@ -128,17 +150,22 @@ export default function Infos() {
       title: "Stornobedingungen",
       content: (
         <>
-      
-        <p>Ein Rücktritt des Gastes bedarf der Textform. Im Falle einer Stornierung gelten folgende Bedingungen:</p>
-        <ul>
-          <li>Bis 20 Tage vor Anreise: kostenfrei</li>
-          <li>19 bis 7 Tage vor Anreise: 80 % des vereinbarten Preises</li>
-          <li>ab 6 Tage vor Anreise oder bei Nichtanreise: 100 % des vereinbarten Preises</li>
-        </ul>
-          </>
+          <p>
+            Ein Rücktritt des Gastes bedarf der Textform. Im Falle einer
+            Stornierung gelten folgende Bedingungen:
+          </p>
+          <ul>
+            <li>Bis 20 Tage vor Anreise: kostenfrei</li>
+            <li>19 bis 7 Tage vor Anreise: 80 % des vereinbarten Preises</li>
+            <li>
+              ab 6 Tage vor Anreise oder bei Nichtanreise: 100 % des
+              vereinbarten Preises
+            </li>
+          </ul>
+        </>
       ),
     },
-        {
+    {
       title: "Parken & Anfahrt",
       content: (
         <p>

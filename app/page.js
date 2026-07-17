@@ -56,8 +56,11 @@ export default function Home() {
           <h2>Unsere Unterkunft</h2>
           <p>
             Freuen Sie sich auf moderne, liebevoll eingerichtete Zimmer und
-            gemütliche Ferienwohnungen, mitten im charmanten Horneburg. Erholen
-            Sie sich, kommen Sie zur Ruhe – wir freuen uns auf Sie!
+            gemütliche Ferienwohnungen, mitten im charmanten Horneburg. Unsere
+            Gästezimmer befinden sich im Erdgeschoss sowie im 1. und 2.
+            Obergeschoss. Bitte beachten Sie, dass unser Haus über keinen
+            Fahrstuhl verfügt. Erholen Sie sich, kommen Sie zur Ruhe – wir
+            freuen uns auf Sie!
           </p>
           <div className={styles.featuresGrid}>
             <div className={styles.featureItem}>

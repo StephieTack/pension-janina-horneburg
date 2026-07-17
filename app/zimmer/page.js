@@ -55,12 +55,12 @@ export default function ZimmerPage() {
             {/* PREISE */}
             <div className={styles.priceWrapper}>
               <div className={styles.priceCard}>
-                <strong>84€</strong>
+                <strong>74€</strong>
                 <p>1 Person / Nacht</p>
               </div>
 
               <div className={styles.priceCard}>
-                <strong>95€</strong>
+                <strong>99€</strong>
                 <p>2 Personen / Nacht</p>
               </div>
 
@@ -87,6 +87,10 @@ export default function ZimmerPage() {
               </li>
               <li>
                 <Check color="var(--color-primary)" /> Ruhige Lage
+              </li>
+              <li>
+                <Check color="var(--color-primary)" /> Kinder unter 3 Jahren:
+                kostenfrei
               </li>
             </ul>
 
@@ -153,6 +157,13 @@ export default function ZimmerPage() {
               </li>
               <li>
                 <Check color="var(--color-primary)" /> Ideal für Familien
+              </li>
+              <li>
+                <Check color="var(--color-primary)" /> Ruhige Lage
+              </li>
+              <li>
+                <Check color="var(--color-primary)" /> Kinder unter 3 Jahren:
+                kostenfrei
               </li>
             </ul>
 

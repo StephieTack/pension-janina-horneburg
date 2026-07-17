@@ -2,7 +2,6 @@
 
 import styles from "./page.module.css";
 import { MapPin, Phone, Mail } from "lucide-react";
-import emailjs from "emailjs-com";
 import { useState } from "react";
 import Hero from "../../components/Hero/Hero";
 import Link from "next/link";
@@ -10,23 +9,38 @@ import Link from "next/link";
 export default function Kontakt() {
   const [status, setStatus] = useState("");
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+const sendEmail = async (e) => {
+  e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
-        e.target,
-        "YOUR_PUBLIC_KEY"
-      )
-      .then(
-        () => setStatus("Nachricht erfolgreich gesendet!"),
-        () => setStatus("Fehler beim Senden.")
-      );
+  const formData = new FormData(e.target);
 
-    e.target.reset();
+  const data = {
+    name: formData.get("name"),
+    email: formData.get("email"),
+    message: formData.get("message"),
   };
+
+  try {
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+
+    if (response.ok) {
+      setStatus("Ihre Nachricht wurde erfolgreich gesendet!");
+      e.target.reset();
+    } else {
+      setStatus("Fehler beim Senden Ihrer Nachricht.");
+    }
+
+  } catch (error) {
+    console.error(error);
+    setStatus("Fehler beim Senden Ihrer Nachricht.");
+  }
+};
 
   return (
     <main>
