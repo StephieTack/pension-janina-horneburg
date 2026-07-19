@@ -11,10 +11,12 @@ export default function PensionPage() {
         title="Einblicke in unsere Pension"
         subtitle="Liebevolle Details, gemütliche Zimmer und eine Atmosphäre zum Ankommen."
         height="medium"
+        showScroll
+        scrollTarget="#intro"
       />
 
       {/* INTRO */}
-      <section className={styles.intro}>
+      <section id="intro" className={styles.intro}>
         <div className={styles.containerSmall}>
           <span className={styles.eyebrow}>Pension Janina</span>
 
