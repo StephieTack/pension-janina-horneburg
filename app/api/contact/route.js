@@ -10,9 +10,9 @@ export async function POST(request) {
       from: "onboarding@resend.dev",
       to: process.env.CONTACT_EMAIL,
       replyTo: email,
-      subject: "Neue Kontaktanfrage",
+      subject: "Anfrage Kontaktformular - Pension Janina",
       html: `
-    <h2>Neue Anfrage</h2>
+    <h2>Anfrage</h2>
     <p><strong>Name:</strong> ${name}</p>
     <p><strong>E-Mail:</strong> ${email}</p>
     <p>${message}</p>
