@@ -1,3 +1,4 @@
+import Script from "next/script";
 import "./globals.css";
 import { Plus_Jakarta_Sans } from "next/font/google";
 
@@ -18,6 +19,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="de" data-scroll-behavior="smooth">
       <body className={plusJakarta.className}>
+        <Script
+          src="https://www.easy-booking.at/bookingengine2/js/jquery.easybooking.frontend.js"
+          strategy="afterInteractive"
+        />
+
         <header className="header">
           <Navigation />
         </header>
