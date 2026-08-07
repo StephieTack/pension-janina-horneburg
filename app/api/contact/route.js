@@ -7,10 +7,10 @@ export async function POST(request) {
 
   try {
     await resend.emails.send({
-      from: "anfrage@resend.de",
+      from: "onboarding@resend.dev",
       to: process.env.CONTACT_EMAIL,
       replyTo: email,
-      subject: "Anfrage Kontaktformular - Pension Janinaaaa",
+      subject: "Anfrage Kontaktformular - Pension Janinaaaab",
       html: `
     <h2>Anfrage</h2>
     <p><strong>Name:</strong> ${name}</p>
