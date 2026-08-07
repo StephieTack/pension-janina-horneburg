@@ -13,12 +13,12 @@ export default function BookingWidget() {
         !window.jQuery.fn ||
         !window.jQuery.fn.ebFrontEnd
       ) {
-        timeoutId = setTimeout(initEasybooking, 100);
+        timeoutId = setTimeout(initEasybooking, 200);
         return;
       }
 
-      // Bereits initialisiert?
-      if (window.jQuery("#ebFrontEndFrame").children().length > 0) {
+      // Widget nur initialisieren, wenn noch nichts geladen wurde
+      if (document.querySelector("#ebFrontEndFrame iframe")) {
         return;
       }
 

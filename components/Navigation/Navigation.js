@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Button from "../Button/Button";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navigation() {
   const [open, setOpen] = useState(false);
@@ -12,7 +13,14 @@ export default function Navigation() {
       <nav className="nav">
         {/* LOGO */}
         <Link href="/" className="logo">
-          <img src="/logo_hell_klein.png" alt="Pension Janina Logo" />
+          {/* <img src="/logo_hell_klein.png" alt="Pension Janina Logo" /> */}
+          <Image
+            src="/logo_hell_klein.png"
+            alt="Pension Janina Logo"
+            width={180}
+            height={60}
+            priority
+          />
         </Link>
 
         {/* DESKTOP NAV */}

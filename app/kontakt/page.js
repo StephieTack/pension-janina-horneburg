@@ -100,7 +100,7 @@ const sendEmail = async (e) => {
               <textarea
                 name="message"
                 rows="5"
-                placeholder="Ihre Nachricht"
+                placeholder="Schreiben Sie uns Ihre Nachricht hier..."
                 required
               />
 
