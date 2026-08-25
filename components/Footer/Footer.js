@@ -59,7 +59,7 @@ export default function Footer() {
           <Link href="/agb">AGB</Link>
           <Link href="/impressum">Impressum</Link>
           <Link href="/datenschutz">Datenschutz</Link>
-          <Link href="/cookies">Cookies</Link>
+          <Link href="/cookies">Cookie-Hinweise</Link>
         </div>
       </div>
     </footer>
