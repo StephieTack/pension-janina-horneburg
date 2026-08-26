@@ -8,39 +8,42 @@ import Link from "next/link";
 
 export default function Kontakt() {
   const [status, setStatus] = useState("");
+  const [statusType, setStatusType] = useState("");
 
-const sendEmail = async (e) => {
-  e.preventDefault();
+  const sendEmail = async (e) => {
+    e.preventDefault();
 
-  const formData = new FormData(e.target);
+    const formData = new FormData(e.target);
 
-  const data = {
-    name: formData.get("name"),
-    email: formData.get("email"),
-    message: formData.get("message"),
-  };
+    const data = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      message: formData.get("message"),
+    };
 
-  try {
-    const response = await fetch("/api/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    });
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
 
-    if (response.ok) {
-      setStatus("Ihre Nachricht wurde erfolgreich gesendet!");
-      e.target.reset();
-    } else {
+      if (response.ok) {
+        setStatus("Ihre Nachricht wurde erfolgreich gesendet!");
+        setStatusType("success");
+        e.target.reset();
+      } else {
+        setStatus("Fehler beim Senden Ihrer Nachricht.");
+        setStatusType("error");
+      }
+    } catch (error) {
+      console.error(error);
       setStatus("Fehler beim Senden Ihrer Nachricht.");
+      setStatusType("error");
     }
-
-  } catch (error) {
-    console.error(error);
-    setStatus("Fehler beim Senden Ihrer Nachricht.");
-  }
-};
+  };
 
   return (
     <main>
@@ -106,7 +109,11 @@ const sendEmail = async (e) => {
 
               <button type="submit">Nachricht senden</button>
 
-              {status && <p className={styles.status}>{status}</p>}
+              {status && (
+                <p className={`${styles.status} ${styles[statusType]}`}>
+                  {status}
+                </p>
+              )}
             </form>
           </div>
         </div>

@@ -7,7 +7,7 @@ export async function POST(request) {
 
   try {
     const { data, error } = await resend.emails.send({
-      from: "onboarding@resend.dev",
+      from: "Pension Janina <kontakt@pension-janina-horneburg.de>",
       to: process.env.CONTACT_EMAIL,
       replyTo: email,
       subject: "Anfrage Kontaktformular - Pension Janina",

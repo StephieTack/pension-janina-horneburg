@@ -10,78 +10,68 @@
   text-align: center;
 }
 
-.container h2 {
+ .container h2 {
   font-family: dancing-script, cursive;
   font-size: 2rem;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 /* ================= GRID ================= */
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 70px;
   text-align: left;
+  align-items: start;
 }
 
 /* ================= INFOS ================= */
 .info {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  font-style: normal; /* wichtig für <address> */
+  gap: 26px;
+  font-style: normal;
+  padding-top: 10px;
 }
 
 .contactLink {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 14px;
 
-  color: black;
+  color: inherit;
   text-decoration: none;
 
-  transition: color 0.2s ease;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
 
   cursor: pointer;
 }
 
 .contactLink:hover {
   color: var(--color-primary);
+  transform: translateX(4px);
 }
 
 .contactLink div {
   display: flex;
   flex-direction: column;
+  gap: 3px;
 }
 
 .contactLink svg {
   color: var(--color-primary);
   min-width: 24px;
+  width: 24px;
+  height: 24px;
+
+  transition: transform 0.2s ease;
 }
 
 .contactLink:hover svg {
-  transform: scale(1.1);
-}
-
-/* ================= PROFILE ================= */
-.profile {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.profileImage {
-  width: 140px;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 10px;
-
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-}
-
-.profileName {
-  font-weight: 500;
-  color: var(--color-primary);
+  transform: scale(1.12);
 }
 
 /* ================= FORM ================= */
@@ -89,41 +79,117 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+
+  padding: 32px;
+  border-radius: 18px;
+  background: #fff;
+
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.06);
 }
 
 .form input,
 .form textarea {
-  padding: 12px;
-  border: 1px solid #ddd;
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 14px 16px;
+
+  border: 1px solid #e2e2e2;
   border-radius: 10px;
+
+  background: #fff;
+
+  font-family: inherit;
   font-size: 0.95rem;
-  transition: 0.2s;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.form textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  color: #999;
 }
 
 .form input:focus,
 .form textarea:focus {
   outline: none;
   border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.04);
 }
 
+/* ================= BUTTON ================= */
 .form button {
+  margin-top: 4px;
+
   background: var(--color-primary);
   color: var(--color-bright);
-  padding: 12px;
+
+  padding: 14px 20px;
+
   border: none;
   border-radius: 10px;
+
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 500;
+
   cursor: pointer;
-  transition: 0.3s;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .form button:hover {
-  opacity: 0.9;
+  opacity: 0.92;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
 }
 
 /* ================= STATUS ================= */
 .status {
-  margin-top: 10px;
+  margin: 4px 0 0;
+  padding: 12px 14px;
+
+  border-radius: 8px;
+
+  background: #edf8f1;
+  color: #287a49;
+
   font-size: 0.9rem;
+  text-align: center;
+
+  animation: statusIn 0.3s ease;
+}
+
+.success {
+  background: #edf8f1;
+  color: #287a49;
+}
+
+.error {
+  background: #fbeeee;
+  color: #b33a3a;
+}
+
+@keyframes statusIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* ================= CTA ================= */
@@ -140,8 +206,17 @@
     padding: 40px 20px;
   }
 
+  .container h2 {
+    font-size: 2rem;
+    margin-bottom: 35px;
+  }
+
   .grid {
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+
+  .form {
+    padding: 24px 20px;
   }
 }
