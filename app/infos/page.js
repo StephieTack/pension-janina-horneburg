@@ -140,10 +140,20 @@ export default function Infos() {
     {
       title: "Zahlung",
       content: (
-        <p>
-          Eine Anzahlung ist bei uns nicht erforderlich. Die Bezahlung erfolgt
-          bequem bei Erhalt der Rechnung vor Ort oder per Überweisung.
-        </p>
+        <>
+          <p>
+            Um die Reservierung verbindlich abzuschließen, bitten wir um eine
+            Anzahlung in Höhe von 10 % des Gesamtbetrags innerhalb von 3 Tagen
+            nach der Buchung.
+          </p>
+          <p>
+            Bei einer Anreise innerhalb der nächsten 14 Tage bitten wir Sie,
+            anstelle der Anzahlung den gesamten offenen Betrag innerhalb von 3
+            Tagen nach der Buchung auf unser Konto zu überweisen. Erfolgt die
+            Anreise bereits vor Ablauf dieser Frist, ist der Gesamtbetrag
+            spätestens einen Tag vor Anreise fällig.
+          </p>
+        </>
       ),
     },
     {
@@ -169,8 +179,8 @@ export default function Infos() {
       title: "Parken & Anfahrt",
       content: (
         <p>
-          Parkmöglichkeiten befinden sich direkt an der Pension. Die genaue
-          Wegbeschreibung erhältst du mit deiner Buchungsbestätigung.
+          Parkmöglichkeiten befinden sich direkt an der Pension. Eine genaue
+          Wegbeschreibung erhalten Sie bequem vor Ihrer Anreise per E-Mail.
         </p>
       ),
     },
@@ -192,8 +202,8 @@ export default function Infos() {
           <header>
             <h2>Die wichtigsten Informationen</h2>
             <p>
-              Du hast Fragen zu deinem Aufenthalt in der Pension Janina? Hier
-              findest du alle wichtigen Informationen – von der Anreise bis zum
+              Sie haben Fragen zu ihrem Aufenthalt in der Pension Janina? Hier
+              finden Sie alle wichtigen Informationen – von der Anreise bis zum
               Check-out.
             </p>
           </header>
